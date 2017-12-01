@@ -1,0 +1,94 @@
+<Alloy>
+    <Window backgroundColor="#f2f2f2" id="photoWin" theme="mytheme">
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL" image="QL300.png"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        <View id="titleBan">
+            <ImageView id="qp" image="QM_FINAL_outlines.png"/>
+            <Label id="Title">Digital Photo</Label>
+        </View>
+
+        <ScrollView class="scrollView">
+            <View id="pickerView">
+            	
+                <Label id="provideInfoLabel">Please provide the following information about your photo.</Label>
+
+                <Label id="photoDateLabel">Date photo was taken: </Label>
+              	<Button class="helpButton" id="PDhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="arti" />
+                <Label id="dateAsterisk" class="asterisk" >*</Label>
+
+
+                <Label id="TitleLabel">Title of item: </Label>
+                <Button class="helpButton" id="PThelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="TitleLabelTA"/>
+                <Label id="PTasterisk" class="asterisk" >*</Label>
+
+                
+                <Label id="photoPlace">Location photo was taken:</Label>
+               <Button class="helpButton" id="PPhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoPlaceTA"/>
+                <Label id="locAsterisk" class="asterisk" >*</Label>
+
+            </View>
+            
+            <!--The OptionDialog tag declares an option dialog, which will need to be opened by the controller.-->
+            <OptionDialog cancel="3" id="dialog">
+                <Options>
+                    <Option>Camera</Option>
+                    <Option platform="ios">Photo Gallery</Option>
+                    <Option platform="android">Photo Gallery</Option>
+                    <Option platform="ios">Help</Option>
+                    <Option>Cancel</Option>
+                </Options>
+            </OptionDialog>
+            
+            <View id="photoView2">
+            
+                
+                <Label id="photoNameF">Name of Photographer [First]:</Label>
+              	<TextField id="photoNameFTA"/>
+                <Label id="NameAsterisk" class="asterisk">*</Label>
+             
+                <Label id="photoName">Name of Photographer [Last]:</Label>
+                <Label class="asterisk" id="PNasterisk" >*</Label>
+                <TextField id="photoNameTA"/>
+                
+                <Label id="photoPeopleName">Name(s) of person/people in the photo:</Label>
+                <Button class="helpButton" id="PPNhelpButton" onClick="helpSubmit"> b </Button>
+                <TextField id="photoPeopleNameTA"/>
+                
+                <Label id="photoEventName">Name(s) of event taking place in photo:</Label>
+                <Button class="helpButton" id="PENhelpButton" onClick="helpSubmit"> b </Button>
+                <TextField id="photoEventNameTA"/>
+                
+                <Label id="photoOrg">Organizations represented in the photo:</Label>
+                <Button class="helpButton" id="POhelpButton" onClick="helpSubmit"> b </Button>
+                <TextField id="photoOrgTA"/>
+                
+                <Label id="photoMake">Make or model of camera and software used:</Label>
+                <Button class="helpButton" id="PMhelpButton" onClick="helpSubmit"> b </Button>
+                <TextField id="photoMakeTA"/>
+            </View>
+            
+            <View id="photoView3">
+                
+                <Label id="photoNotes">Additional Notes:</Label>
+                <Button class="helpButton" id="PNohelpButton" onClick="helpSubmit"> b </Button>
+                <TextArea id="photoNotesTA"/>
+                <Label id="notesAsterisk" class="asterisk">*</Label>
+                
+                <Button id="imgSrc" onClick="showOptions">CLICK TO ADD PHOTOGRAPH</Button>
+                <Button id="next" onClick="submit">Next</Button>
+            </View>
+            
+        </ScrollView>
+    </Window>
+</Alloy>
+
+
+
+
+

@@ -1,0 +1,337 @@
+"#submitWin": {
+	backgroundColor: '#e6e6e6',
+	backgroundDisabledColor: '#000000',
+},
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {fontSize:'12',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	color: "#000000",
+},
+
+
+"Button[platform=android]": {},
+
+"#submissionsView": {
+	backgroundColor: 'transparent',
+	// backgroundColor: 'yellow',
+	top: '0%',
+	left: '0%',
+	// height: '100%',
+	width: '100%', 
+	layout: 'vertical',
+},
+
+"#notesView":{
+	backgroundColor: 'transparent',
+	// backgroundColor: 'green',
+	// top: '0%',
+	left: '0%',
+	width: '100%',
+	// layout: 'vertical',
+},
+
+
+"#pickerView[platform=ios]":{height: '90%',},
+"#pickerView[platform=android]":{height: '300dp',},
+
+"#notesView[platform=ios]":{height: '35%',},
+"#notesView[platform=android]":{height: '130dp',},
+
+"#submissionsView[platform=ios]":{height: '100%',},
+"#submissionsView[platform=android]":{height: '700dp',},
+
+
+".scrollView[platform=ios]": {	
+	top: '17%',
+	backgroundColor: "#e6e6e6",
+	// backgroundColor: "blue",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true', //only IOS devices
+},
+
+".scrollView[platform=android]": {	
+	top: '18%',
+	backgroundColor: "#e6e6e6",
+	// showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: 'auto',
+	layout: 'vertical',
+	scrollType: 'vertical'
+},
+
+////////////NavBar
+// "#QL": {width: '25%',top: '13%',},
+// 
+// "#back":{
+	// left: '5%',
+	// color: 'white',
+	// top: '0%',
+	// backgroundColor:'transparent',
+	// borderColor: 'transparent',
+	// font:{
+		// fontFamily: "queensfoundationfont",
+		// fontSize: 35,
+// 		
+	// }
+// },
+// 
+// "#back[platform = android]":{left: '0%',}
+// 
+// "#TnC": {
+	// right: '5%',
+	// color: 'white',
+	// top: '0%',
+	// backgroundColor:'transparent',
+	// borderColor: 'transparent',
+	// font:{fontFamily: "Entypo", fontSize: 40,}
+// },
+// 
+// "#navBar[platform=android]": {
+	// backgroundColor:'black',
+	// top: '0%',
+	// width: '100%',
+	// height: '5%',
+	// font: {fontSize: 14,},
+	// zIndex: 0
+// },
+// 
+// "#navBar[platform=ios]": {
+	// backgroundColor:'black',
+	// top: '0%',
+	// width: '100%',
+	// height: '5%',
+	// font: {fontSize: 14,},
+	// zIndex: 0
+// },
+// 
+// 
+// "#titleBan[platform=ios]": {
+	// backgroundColor:'white',
+	// top:'5%',
+	// height: '11%',
+	// font: {fontSize: 12,},
+// },
+// 
+// "#titleBan[platform=android]": {
+	// backgroundColor:'white',
+	// top:'5%',
+// 	 
+	// // height: '25%',
+	// height: '15%',
+	// font: {fontSize: 12,}
+// },
+
+"#QL[platform=ios]": {width: '34%',top: '26%',	}
+"#QL[platform=android]": {width: '33%',top: '13%',}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	//top: '3%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+}
+
+"#back[platform=ios]":{top: '8%', font:{fontSize: 36,}}
+"#back[platform=android]":{top: '0%', font:{fontSize: 35,}}
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 40,	
+	}
+}
+
+"#navBar[platform=android]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	height: '13%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+"#navBar[platform=ios]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	// height: '10%',
+	height: '8%',
+	font: {
+		fontSize: 14,
+	},
+	zIndex: 0
+}
+
+
+"#titleBan[platform=ios]": {
+	backgroundColor:'white',
+	top:'7%',
+	// height: '25%',
+	height: '11%',
+	font: {fontSize: 12,}
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor:'white',
+	top:'7%',
+	// borderColor: 'red',
+	// borderWidth: '0.5', 
+	// height: '25%',
+	height: '15%',
+	font: {
+		fontSize: 12,
+	}
+}
+
+"#qp": {top: '12%',width: '30%',left: '7%',}
+
+"#Title": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '35%',
+	right: '5%',
+	font: {fontWeight: 'bold',	fontSize: 18,}
+},
+
+"#Title[platform=android]": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '25%',
+	right: '5%',
+	font: {fontWeight: 'bold',fontSize: 18,}
+},
+
+// ////////BANNER
+
+// "#photoDate": {left: '5%', top: '0%', wordWrap: 'true',},
+// "#photoTitle": {left: '5%', top: '5%', wordWrap: 'true',},
+// "#photoPlace": {left: '5%', top: '10%', wordWrap: 'true',},
+// "#photoNameF": {left: '5%', top: '15%', wordWrap: 'true',},
+// "#photoName": {left: '5%', top: '20%', wordWrap: 'true',},
+// "#photoPeopleName": {left: '5%', top: '25%', wordWrap: 'true',},
+// "#photoEventName": {left: '5%', top: '30%', wordWrap: 'true',},
+// "#photoOrg": {left: '5%', top: '35%', wordWrap: 'true',},
+// "#photoMake": {left: '5%', top: '40%', wordWrap: 'true',},
+// "#photoLoc":{left: '5%', top: '45%', wordWrap: 'true',},
+// "#photoMeasure":{left: '5%', top: '50%', wordWrap: 'true',},
+
+
+"#photoDate": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoTitle": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoPlace": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoNameF": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoName": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoPeopleName": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoEventName": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoOrg": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoMake": {left: '5%', top: '1%', wordWrap: 'true',},
+"#photoLoc":{left: '5%', top: '1%', wordWrap: 'true',},
+"#photoMeasure":{left: '5%', top: '1%', wordWrap: 'true',},
+
+"#photoNotesLabel": {left: '5%', top: '1%', wordWrap: 'true',},
+
+
+"#subPrev": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	// top: '5%',
+	// minimumFontSize: '20',
+	// backgroundColor: 'transparent',
+	font: {fontSize:'20',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:'bold'},
+},
+
+"#photoNotes": {
+	"left": "9.84%",
+	"top": "22%",
+	"borderColor": "#737373",
+	"borderRadius": "5",
+	"height": "40.00%",
+	"width": "80.00%",
+	backgroundColor: 'transparent',
+	editable: 'false',
+	scrollable: 'true',
+	visible: "true",
+	color: "#000000"
+},
+
+"#bannerBottom": {
+	backgroundColor: '#ffffff',
+	height: '25%',
+	left: '0%',
+	top: '93%',
+	width: '100%',
+},
+
+"#uploadIcon":{
+	left: '16%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{fontFamily: "Entypo", fontSize: '50',}
+}
+
+"#uploadIcon[platform=ios]":{top: '70.3%',}
+"#ImageInfo[platform=ios]": {top: '72.5%',},
+
+"#uploadIcon[platform=android]":{top: '82.4%',}
+"#ImageInfo[platform=android]": {top: '83.7%',},
+
+"#subPrev[platform=android]": {top: '10%', left: '21.5%',},
+"#subPrev[platform=ios]":{top: '5%', left: '21%', font: {fontSize:'22',},}
+
+"#uploadedImage[platform=android]": {top: '20%', left: '17%',},
+"#uploadedImage[platform=ios]":{top: '12%', left: '18%',}
+
+"#uploadedImage": {
+	height: '60%',
+	// left: '15%',
+	// top: '15%',
+	width: '65%', 
+	autorotate: true,
+},
+
+
+"#ImageInfo": {
+	"font": {fontSize:'10',fontFamily:'',fontStyle:'',fontWeight:''},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	left: '5%',
+	"height": "6.72%",
+	"width": "100.09%",
+},
+
+"#next": {
+	top: '5%',
+	right: '5%',
+	width: '30%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	color: 'black',
+	borderRadius: 5
+},
+
+"#edit": {
+	top: '5%',
+	left: '5%',
+	width: '30%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	color: 'black',
+	borderRadius: 5,
+},
+
+"#next[platform=android]": {height: '20%',	"font": {fontWeight:'bold'},},
+"#edit[platform=android]": {height: '20%', 	"font": {fontWeight:'bold'},},

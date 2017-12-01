@@ -1,0 +1,7 @@
+<Alloy>
+    <View id="index">
+        <View id="flyoutContainer" onSwipe="onSwipe">
+            <ScrollView id="menuContainer" />
+        </View>
+    </View>
+</Alloy>

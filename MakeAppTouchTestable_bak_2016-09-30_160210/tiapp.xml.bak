@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.queenslibrary.QueensMemoryProject</id>
+    <name>QueensMemoryProject</name>
+    <version>1.0.0.0.1</version>
+    <publisher>ITDUser2</publisher>
+    <url>queenslibrary.org</url>
+    <description>undefined</description>
+    <copyright>2016 by ITDUser2</copyright>
+    <icon>appicon.png</icon>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>ce20e4fb-e96f-41f5-9ddd-8e04338f74c1</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <windows>
+        <Capabilities>
+            <Capability Name="picturesLibrary"/>
+        </Capabilities>
+    </windows>
+    <ios>
+        <min-ios-ver>8.1</min-ios-ver>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
+                        <key>CFBundleURLName</key>
+                        <string>com.queenslibrary.QueensMemoryProject</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>touchtest-queensmemoryproject</string>
+                        </array>
+                    </dict>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="QueensMemoryProject"
+                    android:name=".QueensmemoryprojectActivity" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <data android:scheme="touchtest-queensmemoryproject"/>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+                </activity>
+                <service android:enabled="true" android:exported="false" android:name="com.soasta.android.touchtest.TouchTestService"/>
+            </application>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone" version="1.0">com.soasta.touchtest</module>
+        <module platform="android" version="1.0">com.soasta.touchtest</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>5.5.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+        <plugin>com.soasta.touchtest.android</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">57e175604cabc2ae4362654a</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">iwfXBMYclpybJZN5l2EWHorVFRC9PBvL</property>
+    <property name="acs-oauth-key-development" type="string">t7CioO2ap0KbFE2TP6DdHefXpw8HFyp3</property>
+    <property name="acs-api-key-development" type="string">3YxmoR7rf5woBHtb5XAjAPOTI3RGgkx8</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">wJEtviaa1lWXoMCyyu</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">NLS6siy1nUl4biQaHNnXQLQs3urdthVE</property>
+    <property name="acs-oauth-key-production" type="string">sgPngdZwCi0tslWiyrZ3jTArpN9wBcmb</property>
+    <property name="acs-api-key-production" type="string">GacSs4AIpdqYnG63cWw5en76yvozVGyj</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">hkVTB12xky4iOrdSJg</property>
+    <property name="appc-org-id" type="string">100097951</property>
+    <property name="appc-creator-user-id" type="string">bb6b7af9-79c7-4303-8888-2268c7f01b7a</property>
+    <property name="com-soasta-touchtest-version" type="string">8244.293</property>
+    <property name="com-soasta-touchtest-ios-appId" type="string">429849</property>
+</ti:app>

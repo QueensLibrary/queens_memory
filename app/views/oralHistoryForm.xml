@@ -1,0 +1,102 @@
+<!-- <?xml version="1.0" encoding="UTF-8" ?> -->
+<Alloy>
+    <Window id="oralWin" theme="mytheme">
+    	
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL" image="/images/QL300.png"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        <View id="titleBan">
+          <ImageView id="qp"/>
+          <Label id="Title"> Oral History </Label>
+   
+        </View>
+        
+        <ScrollView id="scrollView">
+            <View id="pickerView">
+            	
+            	<Label id="provideInfo">Please provide the following information about your sound.</Label>
+                
+                <Label id="photoDate">Time period(s) discussed in interview:</Label>
+                <Label id="timeAsterisk" class="asterisk" >*</Label>
+                <Button class="helpButton" id="PDDhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="arti" />
+     
+              	<Label id="photoRecord">Date recorded:</Label>
+              	<Label id="dateAsterisk" class="asterisk" >*</Label>
+                <Button class="helpButton" id="PRhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoRecordTA" />
+                
+                <Label id="soundInterviewLocation"> Location where interview took place: </Label>
+                <TextField id="soundInterviewLocationTA"/>
+        	    <Label id="locAsterisk" class="asterisk" >*</Label>
+                <Button class="helpButton" id="PILhelpButton" onClick="helpSubmit">b</Button>
+              	
+            </View>
+            
+            <View id="soundView">
+       
+                <Label id="TitleLabel">Title of item: </Label>
+                <TextField id="TitleLabelTA"/>
+              	<Button class="helpButton" id="PThelpButton" onClick="helpSubmit">b</Button>
+              	<Label id="PTasterisk" class="asterisk" >*</Label>
+             
+                <Label id="soundName"> Name of interviewer: </Label>
+                <TextField id="soundNameTA"/>
+                <Button class="helpButton" id="PNhelpButton" onClick="helpSubmit">b</Button>
+                
+                <Label id="soundPeopleName"> Name of interviewee [First]: </Label>
+                <TextField id="soundPeopleNameTA"/>
+                <Label id="NameAsterisk" class="asterisk">*</Label>
+
+                
+                
+                <Label id="soundPeopleNameL"> Name of interviewee [Last]: </Label>
+                <TextField id="soundPeopleNameLTA"/>
+                <Label id="NameLAsterisk" class="asterisk">*</Label>
+
+                
+                
+				<Label id="soundLang"> Language(s) used in interview: </Label>
+				<Button class="helpButton" id="PLNhelpButton" onClick="helpSubmit">b</Button>
+				<TextField id="soundLangTA"/>
+                
+                <Label id="soundPlace">Places discussed in the interview:</Label>
+                <Label id="placesAsterisk" class="asterisk">*</Label>
+                <TextField id="soundPlaceTA"/>
+                <Button class="helpButton" id="PPLhelpButton" onClick="helpSubmit">b</Button>
+                
+                <Label id="soundEvent"> Name(s) of events discussed in the interview: </Label>
+                <TextField id="soundEventTA"/>
+                <Button class="helpButton" id="PESNhelpButton" onClick="helpSubmit">b</Button>
+                
+			   <Label id="soundPeople"> People discussed in the interview: </Label>
+               <Button class="helpButton" id="PPehelpButton" onClick="helpSubmit">b</Button>
+               <TextField id="soundPeopleTA"/>
+               
+				
+			</View>
+			
+			<View id="soundView2">
+                
+			  <Label id="soundOrg"> Organizations discussed in interview: </Label>
+                <TextField id="soundOrgTA"/>
+                <Button class="helpButton" id="POhelpButton" onClick="helpSubmit">b</Button>
+
+				<Label id="soundMake"> Make or model of recorder used: </Label>
+                <TextField id="soundMakeTA"/>
+                <Button class="helpButton" id="PMhelpButton" onClick="helpSubmit">b</Button>               
+				
+                <Label id="soundNotes">Additional notes:</Label>
+                <Label class="asterisk" platform = "android" left="35%" top="34%">*</Label> -->
+                <Label id="notesAsterisk" class="asterisk">*</Label>
+                <TextArea id="soundNoTA"/>
+                <Button class="helpButton" id="PNohelpButton" onClick="helpSubmit">b</Button>
+                                
+                <Button id="audioSelectBtn" onClick="showOptions"/>
+                <Button id="nextBtn" onClick="submit"/>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.queenslibrary.QueensMemory</id>
+    <name>Queens Memory</name>
+    <version>1.0.1</version>
+    <publisher>ITDUser2</publisher>
+    <url>https://www.queenslibrary.org</url>
+    <description>undefined</description>
+    <copyright>2016 by Queens Library</copyright>
+    <icon>appicon.png</icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>39d1a795-f195-4006-9222-63749950503b</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <windows>
+        <Capabilities>
+            <Capability Name="picturesLibrary"/>
+        </Capabilities>
+    </windows>
+    <ios>
+        <plist>
+            <dict>
+                <key>NSAppleMusicUsageDescription</key>
+                <string>This app require access to your music library. Your sound will be uploaded to Queens Memory.</string>
+                <key>NSCameraUsageDescription</key>
+                <string>This app require access to your Camera. Your photo will be uploaded to Queens Memory.</string>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string>This app require access to your photo library. Your sound will be uploaded to Queens Memory.</string>
+            </dict>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
+                        <key>CFBundleURLName</key>
+                        <string>com.queenslibrary.QueensMemory</string>
+                        <key>CFBundleURLSchemes</key>
+                    </dict>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="108" android:versionName="1.0.1" package="com.queenslibrary.QueensMemory">
+            <application android:largeHeap="true">
+                <activity android:alwaysRetainTaskState="true"
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+                    android:label="Queens Memory"
+                    android:name=".QueensMemoryActivity"
+                    android:screenOrientation="portrait" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <data android:mimeType="image/*"/>
+                        <action android:name="android.intent.action.SEND"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.OPENABLE"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <action android:name="android.intent.action.PICK"/>
+                        <action android:name="android.intent.action.GET_CONTENT"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.OPENABLE"/>
+                    </intent-filter>
+                </activity>
+            </application>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">ti.imagefactory</module>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.imagefactory</module>
+        <module platform="android">yy.ticontent</module>
+        <module platform="iphone" version="1.0.1">com.kaztopia.settingslauncher</module>
+        <module platform="android" version="0.1">com.jreyes.ticontentres</module>
+        <module platform="android">com.jreyes.imagerotatecorrection</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>6.0.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+        <plugin>hyperloop</plugin>
+    </plugins>
+    <!-- <property name="appc-app-id" type="string">5852c25bdc896a7925f16771</property> -->
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">bzYt83xzV5Urao3zlSystuWfgn5Oq7qT</property>
+    <property name="acs-oauth-key-development" type="string">Z4dga57Ay0WPZXPpNkJBQRD18hvirVrJ</property>
+    <property name="acs-api-key-development" type="string">Am5nsRJvYTHuGCdn1PpaICoFu8Ku0tAa</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">zM78Z0670fHBqO2yuc</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">5d1gorFduKNmlDQitvDAxqWdHQv7H3G1</property>
+    <property name="acs-oauth-key-production" type="string">r7367wvvK6Y8Dqs4KqKaFa462wut4uUJ</property>
+    <property name="acs-api-key-production" type="string">BsXUtbY1al5qGc2cRwRxc9fQ2SFohEyi</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">7gHvrKmXckhpWx0QS9</property>
+    <property name="appc-org-id" type="string">100097951</property>
+    <property name="appc-creator-user-id" type="string">bb6b7af9-79c7-4303-8888-2268c7f01b7a</property>
+    <property name="appc-app-id" type="string">5a0c7d5ebee8423e90622ca1</property>
+    <property name="android.javac.maxmemory" type="string">1024M</property>
+    <property name="android.dx.maxmemory" type="string">2048M</property>
+</ti:app>

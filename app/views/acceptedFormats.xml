@@ -1,0 +1,88 @@
+<Alloy>
+	<Window id="formatsWin">
+		
+	<View id="banner2">
+					<Button id="back" onClick="backButton"> e </Button>
+					 <ImageView id="qpl" image="/images/QL300.png"></ImageView>
+					<Button id="TnC" onClick="doAnimation" > i </Button>
+					
+					<!-- onLongclick="closeAnimation" -->	
+					<!-- o onClick="closeAnimation"	 -->		
+	</View>	
+				 
+		
+	<ListView id="formatContainer" >
+	<SearchBar platform="android,ios"/>
+		<ListSection headerTitle="Audio Files">  
+	            <ListItem title="aif, aiff    Apple Audio File">
+	            </ListItem>
+                <ListItem title="mp3     MP3 Audio File (Tagged)">
+	            </ListItem>
+	            <ListItem title="ogg     Ogg Vorbis Audio File">
+	            </ListItem>
+	            <ListItem title="ram,rm     Real Audio File">	                 
+	            </ListItem>  
+	            <ListItem title="wav     WAV Audio File">
+	            </ListItem> 
+	     </ListSection>
+	     <ListSection headerTitle="Video Files">
+	     		<ListItem title="3gp    3GP Video"/>
+	            <ListItem title="asf    ASF Video"/>
+	            <ListItem title="avi    AVI Video"/>
+	            <ListItem title="divx    DivX Video"/>	                 
+	            <ListItem title="flv     Flash Video"/>
+	      		<ListItem title="mov     Quicktime Video"/>
+	      		<ListItem title="mp4     MPEG-4 Video"/>
+	      		<ListItem title="swf     Macromedia Shockwave/Flash Object"/>
+	      		<ListItem title="vob     DVD Video"/>
+	      		<ListItem title="wmv     Windows Media Video"/>
+         </ListSection>
+         <ListSection headerTitle="Image Files">
+         		<ListItem title="ai, ps, eps     Adobe Postscript "/>
+	      		<ListItem title="bmp     Windows Bitmap Image"/>
+	      		<ListItem title="djvu    DjVu Multi-Resolution Image"/>
+	      		<!-- <ListItem title="eps     Adobe Postscript File"/> -->
+	      		<ListItem title="gif     GIF Image"/>
+	      		<ListItem title="ndd    Adobe InDesign 2.0"/>
+	      		<ListItem title="j2f, jp2   JPEG 2000 Image  "/>
+	      		<ListItem title="jpeg, jpg  JPEG Image"/>
+				<ListItem title="png     PNG Image"/>
+	      		<ListItem title="psd     Adobe Photoshop Image"/>
+	      		<ListItem title="sid     MrSID Multi-Resolution Image"/>
+	      		<ListItem title="tif, tiff     TIFF Image"/>
+         	</ListSection>
+         	<ListSection headerTitle="Document Files">
+         		<ListItem title="dnd-xml DocumentNavigator Document"/>
+	      		<ListItem title="doc     Microsoft Word Document"/>
+	      		<ListItem title="docx    Word Microsoft Office Open XML Format document"/>
+	      		<ListItem title="exe     Windows Executable"/>
+	      		<ListItem title="gz      Gnu ZIP Archive"/>
+	      		<ListItem title="htm, html, shtml     HTML Document"/>
+	      		<ListItem title="mkv     Matroska Multimedia Container"/>
+	      		<ListItem title="pdf     Adobe Acrobat PDF"/>
+				<ListItem title="ppt     Microsoft Powerpoint Presentation"/>
+	      		<ListItem title="pptx    PowerPoint Microsoft Office Open XML Format document"/>
+	      		<ListItem title="rar     RAR Compressed File"/>
+	      		<ListItem title="rdf     Relationship Metadata"/>
+				<ListItem title="rtf     Rich Text Format"/>
+	      		<ListItem title="sb      Superbook"/>
+	      		<ListItem title="tar     Tape Archive"/>
+	      		<ListItem title="taz     Unix Compress Archive"/>
+				<ListItem title="tgz     Gnu ZIP Archive"/>
+	      		<ListItem title="txt     Text Document"/>
+	      		<ListItem title="wpd     WordPerfect Document"/>
+	      		<ListItem title="xls     Microsoft Excel Document"/>
+	      		<ListItem title="xlsx    Excel Microsoft Office Open XML Format document"/>
+	      		<ListItem title="xml     XML Document"/>
+	      		<ListItem title="Z       Unix Compress Archive"/>
+	      		<ListItem title="zip     Zip Compressed File"/>
+	      	</ListSection>
+	      	<ListSection headerTitle="Files">
+         		<ListItem title="bin"/>
+	      		<ListItem title="mpeg"/>
+	      		<ListItem title="mpg"/>
+	      		<ListItem title="tar.gz"/>
+	      	</ListSection>
+   		 </ListView> 
+	</Window>
+</Alloy>

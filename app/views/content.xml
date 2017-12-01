@@ -1,0 +1,17 @@
+<Alloy>
+	<View class="container">
+		
+		 <View id="banner2">
+			<Button id="back" onClick="backButton"> e </Button>
+				<ImageView id="qpl" image="QL300.png"></ImageView>
+			<Button id="TnC" > i </Button>
+			
+					<!-- onLongclick="closeAnimation" -->	
+					<!-- onClick="doAnimation"	 -->			
+		</View>	
+		 
+    <!-- <Button id="lb" >Left</Button>
+    <Button id="rb" >Right</Button> -->
+	</View>
+</Alloy>
+

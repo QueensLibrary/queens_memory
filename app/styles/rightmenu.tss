@@ -1,0 +1,33 @@
+
+"#rContainer" : {
+  backgroundColor: 'gray',
+  width: '175',
+  right: '0%',
+  borderColor: 'gray',
+  borderWidth: 0.5,
+}
+
+"Label":{
+	color: 'white',
+	left: '7%',
+	font:{
+		fontSize: 12,
+	},
+}
+
+"TableViewRow":{
+	color: 'white',
+	borderColor: 'black',
+	borderWidth: 5,
+	font:{
+		fontSize: 12,
+	},
+	height: '10%',
+	
+}
+
+"#tbServiceAlerts":{
+	// title: 'Service Alerts',
+	borderColor: 'black',
+	height: Titanium.UI.FILL,
+}

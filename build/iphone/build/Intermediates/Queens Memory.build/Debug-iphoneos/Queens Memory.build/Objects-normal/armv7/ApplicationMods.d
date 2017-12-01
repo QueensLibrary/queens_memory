@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/iphone/Classes/ApplicationMods.m \
+  /Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/iphone/Classes/ApplicationMods.h

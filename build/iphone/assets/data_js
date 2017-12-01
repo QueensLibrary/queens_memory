@@ -1,0 +1,1 @@
+function setData(e){data=e}function getData(){return data}var data={};exports.setData=setData,exports.getData=getData;

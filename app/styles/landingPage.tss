@@ -1,0 +1,96 @@
+"#backDrop":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundColor: '#B00000'
+}
+
+"#QMW":{
+	width: '70%',
+	// height: '20%',
+	top: '25%',
+	// backgroundColor: 'grey'
+	
+}
+
+"#QLL":{
+	top: '90%',
+	width: "50%"
+	
+}
+
+"#buildNumber":{
+	top: '95%',
+	left: '0%',
+	width: '100%',
+	color: 'black',
+	font:{
+		fontFamily: "Montserrat-Bold",
+		fontSize: 10,
+	},
+	text: Ti.App.version,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+// "image":{
+	// width: '100%',
+	// height: '50%'
+// }
+
+"#startSession[platform=ios]": {
+	title: "Agree",
+	color: 'black',
+	top: '75%', 
+	width: '70%',
+	height: '8%',
+	backgroundColor: '#F0FFFF',
+	borderRadius: 5,
+	borderColor: 'gray',
+	font:{
+		fontFamily: "Montserrat-Regular",
+		fontSize: 15,
+	}
+}
+
+"#startSession[platform=android]": {
+	title: "Agree",
+	color: 'black',
+	top: '75%',
+	height: '50dp', 
+	width: '70%',
+	backgroundColor: '#F0FFFF',
+	borderRadius: 5,
+	borderColor: 'gray',
+	font:{
+		fontFamily: "Montserrat-Regular",
+		// fontSize: 22,
+	}
+}
+
+"#thanks[platform=ios]": {
+	top: '13%',
+	right: '10%',
+	left: '10%',
+	textAlign: 'center',
+	color: 'white',
+	font:{
+		fontFamily: "Montserrat-Bold",
+		fontSize: 22,
+	}
+	
+}
+"#thanks[platform=android]": {
+	top: '10%',
+	right: '10%',
+	left: '10%',
+	textAlign: 'center',
+	color: 'white',
+	font:{
+		fontFamily: "Montserrat-Bold",
+		fontSize: 16,
+	}
+}
+"#thanks[platform=android formFactor=tablet]": {
+	font:{
+		fontSize: 25,
+	}
+}

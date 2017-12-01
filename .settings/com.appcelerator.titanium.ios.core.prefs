@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=QueensMemory
+iosLaunchConfigurationAttributes/ATTR_UPLOAD_DEBUG_SYMBOLS=false
+iosLaunchConfigurationAttributes/appid=com.queenslibrary.QueensMemory
+iosLaunchConfigurationAttributes/certificate=Jongbu Sherpa (S2HXEEUANK)
+iosLaunchConfigurationAttributes/distribute_path=/Users/jongbusherpa/Documents
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=9.3
+iosLaunchConfigurationAttributes/uuid=d4943d52-b6db-455a-acf9-377825920ebd

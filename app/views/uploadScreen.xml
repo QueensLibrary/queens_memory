@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Alloy>
+	<Window id="uploadWin" theme="mytheme">
+		
+		<!-- <Require type="widget" src="com.madrocket.ti.slidemenu" id="menu" /> -->
+		<Widget id="menu" src="com.madrocket.ti.slidemenu" />
+				
+		<View id="uploadView">	
+	
+				<View id="banner2">
+					<Button id="back" onClick="backButton"> T </Button>
+					 <ImageView id="qpl" image="/images/QL300.png"></ImageView>
+					<!-- <Button id="TnC" onClick="doAnimation" > i </Button> -->
+						
+				</View>	
+				 
+				 <Label id="Title"></Label>
+				 
+				 
+				<ImageView id="QMW" image="QMW-ink.png"></ImageView>	
+														
+				<Label id="help"> 
+					Help us document! We welcome your contributions to the Archives and look forward to adding your donations to our online collections.
+ 				</Label>
+				
+				<Label id="choose"> Choose the type of item you are sharing with App</Label>
+					
+				<Button id="photo" onClick="photoSubmit"> DIGITAL PHOTOGRAPH </Button>
+				<Button id="scan" onClick="scanSubmit"> SCANNED ITEM </Button>
+				<Button id="oral" onClick="oralHistSubmit"> ORAL HISTORY INTERVIEW </Button>
+				<Button id="sound" onClick="soundSubmit"> WILD SOUND RECORDING </Button>
+				<Button id="alerts" onClick="systemSubmit"> System Alerts </Button>
+				<!-- <Button id="helpButton" platform="ios" onClick="helpSubmit"> b </Button>
+				<Button id="helpButton" platform="android" onClick="helpSubmit"> b </Button> -->
+				
+				
+				<!-- ABCDEFGHIJKLM
+				NOPQRSTUVWXYZ
+				abcdefghijklm
+				nopqrstuvwxyz
+				1234567890 -->				
+	
+		</View>	
+	</Window>		 
+</Alloy>

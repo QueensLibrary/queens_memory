@@ -1,0 +1,98 @@
+
+"#connectWin" : {
+	backgroundColor: '#B00000',
+  
+}
+
+"Label":{
+	font:{
+		fontFamily: "Montserrat-Regular",
+	},
+	textAlign: 'center'
+}
+
+"Button":{
+	font:{
+		fontFamily: "Montserrat-Regular",
+	},
+	
+}
+
+"#qpl": {
+	width: '33%',
+	top: '11%',
+}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	top: '3%',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+		
+	}
+}
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '3%',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+		
+	}
+}
+
+"#banner2": {
+	backgroundColor:'black',
+	top: '1%',
+	width: '100%',
+	height:'4%',
+	zIndex: 1,
+	font: {
+		fontSize: 14,
+	}
+}
+
+"#facebookButton" : {
+	
+	top: '25%',
+	width: '400px',
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	borderRadius: 5,
+	color: 'black'
+  
+}
+
+"#twitterButton" : {
+	width: '400px',
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	borderRadius: 5,
+	color: 'black',
+	top: '35%',
+  
+}
+
+"#instagramButton" : {
+	width: '400px',
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	borderRadius: 5,
+	color: 'black',
+	top: '45%',
+  
+}
+
+"#tumblrButton" : {
+	width: '400px',
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	borderRadius: 5,
+	color: 'black',
+	top: '55%',
+  
+}

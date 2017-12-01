@@ -1,0 +1,474 @@
+"#termsWin": {
+	"backgroundColor": 'black',
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+},
+
+"#termsWin[platform=android]": {windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN}
+
+"Label":{
+	font:{
+		fontFamily: "Montserrat-Regular"
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"Button":{
+	font:{fontFamily: "Montserrat-Regular"},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+
+"#banner[platform=ios]": {
+	backgroundColor: 'white',
+	top: '3%',
+	width: '100%',
+	height: '20%',
+	font: {fontSize: 12}
+}
+
+"#libLogo[platform=ios]": {
+	backgroundColor: 'black',
+	top: '0%',
+	height: '20%'
+}
+
+"#qpl[platform=ios]": {width: '33%',left: '5%'}
+
+"#titleBan[platform=ios]": {
+	backgroundColor: 'white',
+	top: '20%',
+	height: Titanium.UI.FILL,
+	font: {fontSize: 12}
+}
+
+
+"#qp[platform=ios]": {top: '8%',width: '25%',left: '7%'}
+
+"#Title[platform=ios]": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '5%',
+	left: '70%',
+	color: 'black',
+	font: {fontWeight: 'bold',fontSize: 18}
+}
+
+"#checkBox[platform=ios]": {top: '67%',width: '5%',color: 'white',right: '25%'}
+
+"#fAsterisk":{color: 'red'}
+"#lAsterisk":{color: 'red'}
+"#eAsterisk":{color: 'red'}
+
+"#fAsterisk[platform=ios]":{top: '4%',left: '28%'}
+"#lAsterisk[platform=ios]":{top: '24%',left: '28%'}
+"#eAsterisk[platform=ios]":{top: '44%',left: '34%'}
+
+"#fAsterisk[platform=android]":{top: '4%',left: '29%'}
+"#lAsterisk[platform=android]":{top: '24%',left: '29%'}
+"#eAsterisk[platform=android]":{top: '45%',left: '36%'}
+
+"#asterisk":{color: 'red'}
+"#asterisk[platform=ios]":{left: '25%',top: '94%'}
+"#asterisk[platform=android]":{left: '32%',top: '96%'}
+
+////////////////////////////IOS/////////////////////////////
+
+".scrollView[platform=ios]": {
+	top: '15.5%',
+	backgroundColor: "gray",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true'
+}
+
+"#termsView[platform=ios]": {height: '85%',width: '100%',backgroundColor: 'black'}
+"#view2[platform=ios]": {height: '80%',backgroundColor: 'black'}
+
+"#doYou[platform=ios]": {
+	top: '5%',
+	left: '5%',
+	right: '5%',
+	color: 'white',
+	font:{fontWeight: 'bold',fontSize: 18}
+}
+
+"#termsnC[platform=ios]": {
+	top: '18.5%',
+	left: '5%',
+	right: '5%',
+	color: 'white',
+	textAlign: 'center',
+	font: {fontSize: 12,	fontFamily: 'Arial'},
+}
+"#termsnC[platform=ios formFactor=tablet]": {
+	top: '20%',
+	left: '5%',
+	right: '5%',
+	color: 'white',
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize: 18,fontFamily: 'Arial'}
+}
+
+".asterisk[formFactor=handheld]": {
+	"font": {
+		fontSize: '20',
+		fontFamily: 'Montserrat-Regular',
+		fontStyle: '',
+		fontWeight: ''
+	}
+},
+
+// "#asterisk[platform=ios formFactor=tablet]":{
+	// color: 'red',
+	// top: '84%',
+	// left: '35%'
+// }
+
+// "#asterisk[platform=ios]":{
+	// color: 'red',
+	// top: '97%',
+	// left: '25%'
+// }
+
+"#field[platform=ios formFactor=tablet]":{
+	color: 'white',
+	top: '99%',
+	right: '25%',
+	font:{
+		fontSize: 18
+	}
+}
+//
+// "#field[if=Alloy.Globals.iPhone6P]":{
+// color: 'white',
+// top: '90%',
+// right: '20%',
+// font:{
+// }
+// }
+
+"#field[platform=ios]":{
+	color: 'white',
+	top: '95%',
+	right: '25%',
+	font:{}
+}
+
+"#lText[platform=ios]": {
+	top: '33%',
+	width: '85%',
+	left: '5%',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#fText[platform=ios]": {
+	top: '13%',
+	width: '85%',
+	left: '5%',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#firstName[platform=ios]": {
+	color: 'white',
+	top: '5%',
+	left: '5%'
+}
+
+"#lastName[platform=ios]": {
+	color: 'white',
+	top: '25%',
+	left: '5%'
+}
+
+"#emailA[platform=ios]": {
+	top: '54%',
+	width: '85%',
+	left: '5%',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#email[platform=ios]": {
+	color: 'white',
+	top: '46%',
+	left: '5%'
+}
+
+"#submit[platform=ios]": {
+	// title: "Agree",
+	top: '80%',
+	width: '70%',
+	height: '8%',
+	borderRadius: 5,
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	color: 'black'
+}
+
+"#stop[platform=ios]": {
+	top: '90%',
+	width: '70%',
+	height: '8%',
+	borderRadius: 5,
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	color: 'black'
+}
+
+".helpButton": {
+	zIndex: 1,
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 40
+	}
+}
+
+"#EmailhelpButton[platform=android]":{
+	zIndex: 1,
+	top: '55%',
+	width: '9%',
+	right: '10%',
+	height: '4%',
+	backgroundColor: 'transparent',
+	borderColor: 'transparent',
+	color: 'white'
+}
+
+
+"#EmailhelpButton[platform=ios]":{
+	top: '57%',
+	right: '3%',
+	width: '25%',
+	height: '1%',
+	color: 'black'
+}
+
+'#rememberMe[platform=ios formFactor=tablet]':{
+	color: 'white',
+	top: '68%',
+	left: '20%',
+	font:{
+		fontSize: 18
+	}
+}
+
+'#rememberMe[platform=ios]':{
+	color: 'white',
+	top: '68%',
+	left: '15%',
+	font:{
+		fontSize: 18
+	}
+}
+
+/////////////ANDROID///////////////////////////////////////////////////
+
+
+"#banner[platform=android]": {
+	top: '0%',
+	width: '100%',
+	height: '20%',
+	font: {
+		fontSize: 12
+	}
+}
+
+"#libLogo[platform=android]": {
+	backgroundColor: 'black',
+	top: '0%',
+	height: '20%'
+}
+
+
+"#qpl[platform=android]": {
+	width: '30%',
+	left: '5%'
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor: 'white',
+	top: '20%',
+	height: Titanium.UI.FILL,
+	borderColor: 'red',
+	borderWidth: '0.5',
+	font: {
+		fontSize: 12
+	}
+}
+
+
+"#qp[platform=android]": {
+	top: '2%',
+	width: '28%',
+	left: '5%'
+}
+
+"#Title[platform=android]": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '2%',
+	left: '70%',
+	color: 'black',
+	font: {
+		fontWeight: 'bold',
+		fontSize: 18
+	}
+}
+
+//////////Banner
+
+"#titleBan[platform=android]": {
+	backgroundColor: 'white',
+	top: '20%',
+	height: "500dp",
+	font: {
+		fontSize: 12
+	}
+}
+
+".scrollView[platform=android]": {
+	top: '14%',
+	backgroundColor: "gray",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: 'auto',
+	layout: 'vertical',
+	scrollType: 'vertical'
+}
+
+"#termsView[platform=android]": {
+	height: '500dp',
+	width: '100%',
+	backgroundColor: 'black'
+}
+
+"#termsView[platform=android formFactor=tablet]": {
+	height: '45%',
+	width: '100%',
+	backgroundColor: 'black'
+}
+
+"#view2[platform=android]": {
+	height: '500dp',
+	backgroundColor: 'black'
+}
+
+"#view2[platform=android formFactor=tablet]": {
+	height: '100%',
+	backgroundColor: 'black'
+}
+
+"#doYou[platform=android]": {
+	top: '5%',
+	left: '5%',
+	right: '5%',
+	color: 'white',
+	font:{
+		fontWeight: 'bold',
+		fontSize: 18
+	}
+}
+
+"#termsnC[platform=android]": {
+	top: '18%',
+	left: '7%',
+	right: '5%',
+	color: 'white',
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+
+	font: {
+		fontSize: 12,
+		fontFamily: 'Arial'
+	}
+}
+
+
+
+
+"#field[platform=android]":{
+	color: 'white',
+	top: '97%',
+	right: '25%',
+	font:{
+		fontSize: 12
+	}
+}
+
+"#lText[platform=android]": {
+	top: '33%',
+	width: '85%',
+	left: '5%'
+}
+
+"#fText[platform=android]": {
+	top: '13%',
+	width: '85%',
+	left: '5%'
+}
+
+"#firstName[platform=android]": {
+	color: 'white',
+	top: '5%',
+	left: '5%'
+}
+
+"#lastName[platform=android]": {
+	color: 'white',
+	top: '25%',
+	left: '5%'
+}
+
+"#emailA[platform=android]": {
+	top: '54%',
+	width: '85%',
+	left: '5%'
+}
+
+"#email[platform=android]": {
+	color: 'white',
+	top: '46%',
+	left: '5%'
+}
+
+'#rememberMe[platform=android]':{
+	color: 'white',
+	top: '66%',
+	left: '23%',
+	font:{
+		fontSize: 12
+	}
+}
+
+"#checkBox[platform=android]": {
+	top: '65%',
+	width: '25%',
+	color: 'white',
+	right: '31%'
+}
+
+
+"#submit[platform=android]": {
+	top: '75%',
+	width: '70%',
+	borderRadius: 5,
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	color: 'black'
+}
+
+"#stop[platform=android]": {
+	top: '88%',
+	width: '70%',
+	borderRadius: 5,
+	borderColor: 'gray',
+	backgroundColor: '#f2f2f2',
+	color: 'black'
+}
+
+
+

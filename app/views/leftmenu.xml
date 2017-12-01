@@ -1,0 +1,21 @@
+<Alloy>
+	
+	<TableView id="lContainer">
+		<!-- width="165" -->
+		<!-- <Label>I'm Left</Label> -->
+		
+     <!-- <TableViewSection id="sectionFruit" headerTitle="Fruit"> -->
+            <TableViewRow id="appInfo" title="About this App"/>
+            <TableViewRow title="Bananas"/>
+        <!-- </TableViewSection> -->
+        <!-- <TableViewSection id="sectionVeg" headerTitle="Vegetables"> -->
+            <TableViewRow title="Carrots"/>
+            <TableViewRow title="Potatoes"/>
+        <!-- </TableViewSection> -->
+        <!-- <TableViewSection id="sectionFish" headerTitle="Fish"> -->
+            <TableViewRow title="Cod"/>
+            <TableViewRow title="Haddock"/>
+        <!-- </TableViewSection> -->
+	 </TableView>		
+
+</Alloy>

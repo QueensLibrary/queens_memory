@@ -1,0 +1,1721 @@
+/**
+ * @author ITD
+ */
+
+// scanArtifactDialog.show();
+		// scanArtifactDialog.addEventListener('click', function(event) {
+// 			// switch(event.index) {
+			// case 0:
+					// $.artifactText.value = event.index.text;
+
+							// console.log("This is in digital photoform, success photogallery");
+// 
+							// Ti.API.debug('Our type was: ' + scannedItem.mimeType);
+							// Ti.API.debug('Our api name was: ' + scannedItem.apiName);
+							// Titanium.API.info('image url: ' + scannedItem.size);
+// 
+							// $.scanSrc.setTitle("Change Image");
+							// alert("An image has been selected from the gallery!");
+// 
+							// scannedItemMimeType = scannedItem.mimeType;
+// 
+							// var stringToSaveInDatabase = Ti.Utils.base64encode(scannedItem).toString();
+							// Ti.API.info('These are the current BASE64:' + stringToSaveInDatabase);
+						// } else {
+							// alert("got the wrong type back =" + event.mediaType);
+						// }
+					// },
+
+					// cancel : function() {
+						// // called when user cancels taking a picture
+						// alert("Abort adding in picture from gallery");
+					// },
+					// error : function(error) {
+						// // called when there's an error
+						// var a = Titanium.UI.createAlertDialog({
+							// title : 'Camera'
+						// });
+						// if (error.code == Titanium.Media.NO_CAMERA) {
+							// a.setMessage('Please run this test on device');
+						// } else {
+							// a.setMessage('Unexpected error: ' + error.code);
+						// }
+						// a.show();
+					// },
+// 
+					// saveToPhotoGallery : false,
+				// });
+				// break;
+			// case 1:
+				// break;
+			// default:
+				// alert("Scanned Item Request Canceled");
+				// break;
+			// }
+		// });
+
+
+
+
+'Photo Print',
+'Photo negative',
+'Photo positive',
+'Ephemera',
+'Leaflet',
+'Manuscript',
+'Diary',
+'Clipping',
+'Advertisement',
+'Album',
+'Broadside',
+'Cartoon',
+'Other:',
+'Cancel'
+
+
+var scanArtifactDialog = Ti.UI.createOptionDialog(artifacts);
+var artifacts = {
+	title : 'Select Artifact Type'
+};
+
+artifact.options = ['Photo Print', 'Photo negative', 'Photo positive', 'Ephemera', 'Leaflet', 'Manuscript', 'Diary', 'Clipping', 'Advertisement', 'Album', 'Broadside', 'Cartoon', 'Other:', 'Cancel'];
+// opts.buttonNames = ['Help'];
+opts.cancel = 13;
+
+
+
+// // Variables
+{
+		scanArtifactDialog.show();
+		scanArtifactDialog.addEventListener('click', function(event) {
+			// switch(event.index) {
+			// case 0:
+					$.artifactText.value = event.index.text;
+
+							// console.log("This is in digital photoform, success photogallery");
+// 
+							// Ti.API.debug('Our type was: ' + scannedItem.mimeType);
+							// Ti.API.debug('Our api name was: ' + scannedItem.apiName);
+							// Titanium.API.info('image url: ' + scannedItem.size);
+// 
+							// $.scanSrc.setTitle("Change Image");
+							// alert("An image has been selected from the gallery!");
+// 
+							// scannedItemMimeType = scannedItem.mimeType;
+// 
+							// var stringToSaveInDatabase = Ti.Utils.base64encode(scannedItem).toString();
+							// Ti.API.info('These are the current BASE64:' + stringToSaveInDatabase);
+						// } else {
+							// alert("got the wrong type back =" + event.mediaType);
+						// }
+					// },
+
+					// cancel : function() {
+						// // called when user cancels taking a picture
+						// alert("Abort adding in picture from gallery");
+					// },
+					// error : function(error) {
+						// // called when there's an error
+						// var a = Titanium.UI.createAlertDialog({
+							// title : 'Camera'
+						// });
+						// if (error.code == Titanium.Media.NO_CAMERA) {
+							// a.setMessage('Please run this test on device');
+						// } else {
+							// a.setMessage('Unexpected error: ' + error.code);
+						// }
+						// a.show();
+					// },
+// 
+					// saveToPhotoGallery : false,
+				// });
+				break;
+			// case 1:
+				// break;
+			// default:
+				// alert("Scanned Item Request Canceled");
+				// break;
+			// }
+		});
+	}
+	
+
+// $.photoDate.text += ' ' + data.getData().photoDate;
+// $.photoPlace.text += ' ' + data.getData().photoPlace;
+// // $.photoName.text += ' ' + data.getData().photoFirstName;
+// // $.photoName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+// $.photoName.text += ' ' + args.photoFullName;
+// 
+// 
+// $.photoPeopleName.text += ' ' + data.getData().photoPeopleNames;
+// $.photoEventName.text += ' ' + data.getData().photoEventName;
+// $.photoOrg.text += ' ' + data.getData().photoOrg;
+// $.photoMake.text += ' ' + data.getData().photoModel;
+// $.photoNotes.value += ' ' + data.getData().photoNotes;
+// $.photoTitle.text += ' ' + data.getData().photoTitle;
+// $.photoLoc.text += ' ' + data.getData().photoLocation;
+// $.photoMeasure.text += ' ' + data.getData().photoMeasurements;
+
+
+var str = "Visit Microsoft!";
+var res = str.replace("Microsoft", "W3Schools");
+
+function findChar(string){
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.search("locate");
+	
+	var position = string.search("&" || ">" || "<");
+	if (string.includes("&" || ">" || "<")){
+		replaceChar(string);
+	}
+	
+}
+
+function findChar(string){
+	if (string.includes("&" || ">" || "<")){
+		replaceChar(string);
+	}
+	
+}
+
+function replaceChar(position){
+	str=str.replace('&', '&amp;');
+	str=str.replace('<', '&lt;');
+	str=str.replace('>', '&gt;');
+}
+
+//function to replace special characters which might break valet server
+function replaceSpecialChar($argstring){
+  $argstring=str_replace('&', '&amp;', $argstring);
+  $argstring=str_replace('<', '&#60;', $argstring);
+  $argstring=str_replace('>', '&#62;', $argstring);
+  return $argstring;
+}
+
+// function replacer(i, str){
+	// if (i.includes("&" || ">" || "<")){
+		// // replaceChar(string);
+		// str=str.replace('&', '&amp;');
+		// str=str.replace('<', '&lt;');
+		// str=str.replace('>', '&gt;');
+// 		
+	// } else{
+		// return str;
+	// }
+// }
+
+// function findChar(string){
+	// if (string.includes("&" || ">" || "<")){
+		// replaceChar(string);
+	// }
+// 	
+// }
+// 
+// function replaceChar(str){
+	// str=str.replace('&', '&amp;');
+	// str=str.replace('<', '&lt;');
+	// str=str.replace('>', '&gt;');
+// }
+
+function replaceChar(str){
+	str=str.replace('&', '&amp;');
+	str=str.replace('<', '&lt;');
+	str=str.replace('>', '&gt;');
+}
+
+function replacer(str){
+	if (str.includes("&" || ">" || "<")){
+		replaceChar(str);
+		// str=str.replace('&', '&amp;');
+		// str=str.replace('<', '&lt;');
+		// str=str.replace('>', '&gt;');
+		
+	} else {
+		return str;
+	}
+}
+
+// function replaceChar(str){
+	// str=str.replace('&', '&amp;');
+	// str=str.replace('<', '&lt;');
+	// str=str.replace('>', '&gt;');
+// }
+
+function replacer(i, string){
+	if (i.includes('&' || '>' || '<')){
+		// replaceChar(str);
+		console.log("There are illegal chracters in here!");
+		i=i.replace('&', 'NOT AMPERSAND!!!!!');
+		// str=str.replace('&', '&amp;');
+		i=i.replace('<', '&lt;');
+		i=i.replace('>', '&gt;');
+		
+	} else {
+		return string;
+	}
+}
+
+// var json = JSON.stringify(myObject, replacer);
+// console.log("Am I erplacing this in scanItem>?????"  + json);
+
+// Ti.API.info("Replacer in action submission" + JSON.stringify(myObject, replacer));
+
+
+
+
+
+Digital Photo
+	// if(	args.photoDate.length >= 48){
+// 	
+	// console.log("heighttoNum length 48 " + heighttoNum($.photoTitle.top, 4));
+// 	
+	// heighttoNum($.photoTitle.top, 2);
+	// heighttoNum($.photoPlace.top, 2);
+	// heighttoNum($.photoNameF.top, 2);
+	// heighttoNum($.photoName.top, 2);
+	// heighttoNum($.photoPeopleName.top, 2);
+	// heighttoNum($.photoEventName.top, 2);
+	// heighttoNum($.photoOrg.top, 2);
+	// heighttoNum($.photoMake.top, 2);
+// 	
+	// console.log("photoDate.length >= 48 " +" "+ " PhotoTitle top: " + $.photoTitle.top + " +1 " + (parseInt($.photoTitle.top, 10)+1));
+// 	
+	// } else if (args.photoDate.length >= 104){
+		// // $.photoTitle.top = '8%'; //SHould be like +4/+5
+		// // $.photoPlace.top = '13%';
+		// // $.photoNameF.top = '18%';
+		// // $.photoName.top = '23%';
+		// // $.photoPeopleName.top = '28%';
+		// // $.photoEventName.top = '33%';
+		// // $.photoOrg.top = '38%';
+		// // $.photoMake.top = '43%';
+// 		
+		// heighttoNum($.photoTitle.top, 3);
+		// heighttoNum($.photoPlace.top, 3);
+		// heighttoNum($.photoNameF.top, 3);
+		// heighttoNum($.photoName.top, 3);
+		// heighttoNum($.photoPeopleName.top, 3);
+		// heighttoNum($.photoEventName.top, 3);
+		// heighttoNum($.photoOrg.top, 3);
+		// heighttoNum($.photoMake.top, 3);
+	// }
+// 	
+	// if(	args.photoTitle.length >= 39){
+// 	
+	// // $.photoTitle.top = '7%'; //SHould be like +4/+5
+// 	
+	// // $.photoPlace.top = '12%';
+	// // $.photoNameF.top = '17%';
+	// // $.photoName.top = '22%';
+	// // $.photoPeopleName.top = '27%';
+	// // $.photoEventName.top = '32%';
+	// // $.photoOrg.top = '37%';
+	// // $.photoMake.top = '42%';
+// 	
+	// console.log("top of photoplace text: " + $.photoPlace.top);
+	// console.log("top of photoFirstName text: " + $.photoNameF.top);
+	// console.log("top of photoLastName text: " + $.photoName.top);
+	// console.log("top of photoPeopleNames text: " + $.photoPeopleName.top);
+	// console.log("top of photoEventName text: " + $.photoEventName.top);
+	// console.log("top of photoOrg text: " + $.photoOrg.top);
+	// console.log("top of photoModel text: " + $.photoMake.top);
+// 
+	// // heighttoNum($.photoTitle.top, 2);
+	// heighttoNum($.photoPlace.top, 3);
+	// heighttoNum($.photoNameF.top, 3);
+	// heighttoNum($.photoName.top, 3);
+	// heighttoNum($.photoPeopleName.top, 3);
+	// heighttoNum($.photoEventName.top, 3);
+	// heighttoNum($.photoOrg.top, 3);
+	// heighttoNum($.photoMake.top, 3);
+// 	
+	// } else if (args.photoTitle.length >= 97){
+		// // $.photoTitle.top = '8%'; //SHould be like +4/+5
+// 		
+		// // $.photoPlace.top = '16%';
+		// // $.photoNameF.top = '19%';
+		// // $.photoName.top = '23%';
+		// // $.photoPeopleName.top = '28%';
+		// // $.photoEventName.top = '33%';
+		// // $.photoOrg.top = '38%';
+		// // $.photoMake.top = '43%';
+// 		
+		// heighttoNum($.photoTitle.top, 4);
+		// heighttoNum($.photoPlace.top, 4);
+		// heighttoNum($.photoNameF.top, 4);
+		// heighttoNum($.photoName.top, 4);
+		// heighttoNum($.photoPeopleName.top, 4);
+		// heighttoNum($.photoEventName.top, 4);
+		// heighttoNum($.photoOrg.top, 4);
+		// heighttoNum($.photoMake.top, 4);
+// // 	
+	// } 
+	// else if (args.photoTitle.length >= 97 && args.photoDate.length >= 104){
+// 		
+		// // // $.photoTitle.top = '8%'; //SHould be like +4/+5
+		// // $.photoPlace.top = '16%';
+		// // $.photoNameF.top = '19%';
+		// // $.photoName.top = '24%';
+		// // $.photoPeopleName.top = '29%';
+		// // $.photoEventName.top = '34%';
+		// // $.photoOrg.top = '39%';
+		// // $.photoMake.top = '44%';
+// 		
+		// heighttoNum($.photoTitle.top, 4);
+		// heighttoNum($.photoPlace.top, 5);
+		// heighttoNum($.photoNameF.top, 5);
+		// heighttoNum($.photoName.top, 5);
+		// heighttoNum($.photoPeopleName.top, 5);
+		// heighttoNum($.photoEventName.top, 5);
+		// heighttoNum($.photoOrg.top, 5);
+		// heighttoNum($.photoMake.top, 5);
+// // 	
+	// }
+	
+	// place ==== 52 and 109
+	// first === 
+
+// ||  || args.photoPlace.length || 
+// args.photoEventName.length || args.photoOrg.length
+// 
+// args.photoFirstName.length || args.photoLastName.length
+// args.photoPeopleNames.length
+// args.photoModel.length
+
+
+		
+// || args.photoPlace.length || args.photoEventName.length || args.photoOrg.length
+// args.photoFirstName.length || args.photoLastName.length
+// args.photoPeopleNames.length
+// args.photoModel.length
+
+
+submissionpage
+
+		else if (args.photoTitle.length >= 110 
+			&& args.photoDate.length >= 110 
+			&& args.photoEventName.length >= 110 
+			&& args.photoOrg.length >= 110 
+			&& args.photoFirstName.length >= 110 
+			&& args.photoLastName.length >= 110 
+			&& args.photoPeopleNames.length >= 110 
+			&& args.photoModel.length >= 110 
+			&& args.photoLocation.length >= 110 
+			&& args.artifactType.length >= 110 
+			&& args.photoMeasurements.length >= 110){
+
+
+// $.photoName.text += ' ' + data.getData().photoFirstName;
+	// $.photoName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+	// $.photoName.text += ' ' + args.photoFullName;
+	
+	// $.photoName.text += ' ' + data.getData().photoFullName;
+	
+	
+	// $.photoTitle.top = '7%'; //SHould be like +4/+5
+	// $.photoPlace.top = '12%';
+	// $.photoNameF.top = '17%';
+	// $.photoName.top = '22%';
+	// $.photoPeopleName.top = '27%';
+	// $.photoEventName.top = '32%';
+	// $.photoOrg.top = '37%';
+	// $.photoMake.top = '42%';
+	
+	
+	
+	// $.photoTitle.top = '7%';
+	// $.photoPlace.top = '7%';
+	// $.photoNameF.top = '7%';
+	// $.photoName.top = '7%';
+	// $.photoPeopleName.top = '7%';
+	// $.photoEventName.top = '7%';
+	// $.photoOrg.top = '7%';
+	// $.photoMake.top = '7%';
+	// $.photoLoc.top = '7%';
+	// $.photoMeasure.top = '7%';
+	// $.photoNotesLabel.top = '0%';
+	// $.photoLoc.top = '7%';
+	// $.photoMeasure.top = '7%';
+	// $.photoNotesLabel.top = '0%';
+	
+		// $.photoName.text += ' ' + data.getData().photoFirstName;
+	// $.photoName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+	// $.photoName.text += ' ' + args.photoFullName;
+	
+	// var args = arguments[0] || {};
+// var menuController;
+// var data = require('data');
+// var uploadScreenController;
+// 
+// 
+// // var ACS_DIGITAL_PHOTO_UPLOAD_URL = "http://172.16.100.34:8081/api/v1/valets";
+// var ACS_DIGITAL_PHOTO_UPLOAD_URL = "http://devuploadapi.queenslibrary.org:8081/api/v1/valets/" ;
+// 
+// $.Title.text = args.thisTitle || "Error, most like";
+// 
+// 
+// console.log("FullName: " + args.photoFullName);
+// console.log("SecondName: " + args.photoFullName[2]);
+// 
+// console.log("Length of photodate text: " + args.photoDate.length);
+// console.log("Length of phototitle text: " + args.photoTitle.length);
+// console.log("Length of photoplace text: " + args.photoPlace.length);
+// console.log("Length of photoFirstName text: " + args.photoFirstName.length);
+// console.log("Length of photoLastName text: " + args.photoLastName.length);
+// console.log("Length of photoPeopleNames text: " + args.photoPeopleNames.length);
+// console.log("Length of photoEventName text: " + args.photoEventName.length);
+// console.log("Length of photoOrg text: " + args.photoOrg.length);
+// console.log("Length of photoModel text: " + args.photoModel.length);
+// 
+// 
+// console.log("Length of photodate text: " + args.photoDate.length);
+// console.log("Length of photodate text: " + args.photoDate.length);
+// 
+// console.log("Length of photoNotes text: " + args.photoNotes.length);
+// 
+// 
+// 
+// if (OS_IOS){
+	// $.QL.image = 'QL300.png';
+	// $.qp.image = 'QM_FINAL_outlines.png';
+// 	
+	// }
+// else if (OS_ANDROID){
+	// $.QL.image = '/images/QL300.png';
+	// $.qp.image = '/images/QM_FINAL_outlines.png';
+	// }
+// 	
+// if(args.thisTitle == "Scanned Item"){
+// 	
+	// if(OS_ANDROID){
+	// $.submissionsView.height = '500dp';	
+	// }  
+// 	
+// 	
+	// $.photoTitle.top = '7%';
+	// $.photoPlace.top = '7%';
+	// $.photoNameF.top = '7%';
+	// $.photoName.top = '7%';
+	// $.photoPeopleName.top = '7%';
+	// $.photoEventName.top = '7%';
+	// $.photoOrg.top = '7%';
+	// $.photoMake.top = '7%';
+// 	
+// 	
+	// $.photoLoc.top = '7%';
+	// $.photoMeasure.top = '7%';
+// 	
+	// $.photoNotesLabel.top = '0%';
+// 	
+	// $.photoPlace.text = "Artifact Type: ";
+	// $.photoName.text = "Artifact Creator: ";
+// 	
+	// // $.photoNotes.height = '40%';
+// 	
+	// $.photoDate.text += ' ' + data.getData().photoDate;
+	// $.photoPlace.text += ' ' + data.getData().artifactType;
+	// // $.photoName.text += ' ' + data.getData().photoFirstName;
+	// // $.photoName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+	// // $.photoName.text += ' ' + args.photoFullName;
+// 	
+	// // $.photoName.text += ' ' + data.getData().photoFullName;
+// 	
+// 	
+	// $.photoNameF.text += ' ' + data.getData().photoFirstName;
+	// $.photoName.text += ' ' + data.getData().photoLastName;
+// 	
+	// $.photoPeopleName.text += ' ' + data.getData().photoPeopleNames;
+	// $.photoEventName.text += ' ' + data.getData().photoEventName;
+	// $.photoOrg.text += ' ' + data.getData().photoOrg;
+	// $.photoMake.text += ' ' + data.getData().photoModel;
+	// // $.photoNotes.value += ' ' + data.getData().photoNotes;
+	// $.photoNotesLabel.text += ' ' + data.getData().photoNotes;
+	// $.photoTitle.text += ' ' + data.getData().photoTitle;
+	// $.photoLoc.text += ' ' + data.getData().photoLocation;
+	// $.photoMeasure.text += ' ' + data.getData().photoMeasurements;
+// }
+// 
+// 
+// if(args.thisTitle == "Digital Photo"){
+// 	
+	// if(OS_IOS){
+	// $.notesView.height = '30%';
+	// }
+// 	
+// 	
+	// if(	args.photoDate.length >= 45){
+// 		
+	// // $.photoTitle.top +7;
+	// // $.photoPlace.top +5;
+	// // $.photoNameF.top +5;
+	// // $.photoName.top +7;
+	// // $.photoPeopleName.top +5;
+	// // $.photoEventName.top +5;
+	// // $.photoOrg.top +5;
+	// // $.photoMake.top +5;
+// 	
+	// $.photoTitle.top = '7%'; //SHould be like +4/+5
+	// $.photoPlace.top = '12%';
+	// $.photoNameF.top = '17%';
+	// $.photoName.top = '22%';
+	// $.photoPeopleName.top = '27%';
+	// $.photoEventName.top = '32%';
+	// $.photoOrg.top = '37%';
+	// $.photoMake.top = '42%';
+// // 	
+// // 	
+	// // $.photoLoc.top = '7%';
+	// // $.photoMeasure.top = '7%';
+// // 	
+	// // $.photoNotesLabel.top = '0%';
+// 	
+	// }
+// 
+// // || args.photoTitle.length || args.photoPlace.length || 
+// // args.photoEventName.length || args.photoOrg.length
+// // 
+// // args.photoFirstName.length || args.photoLastName.length
+// // args.photoPeopleNames.length
+// // args.photoModel.length
+// 	
+	// // $.soundInterviewDate.visible = 'false';
+	// $.photoLoc.visible = false;
+	// $.photoMeasure.visible = false;
+	// // $.soundInterName.visible = false;
+	// // $.soundLang.visible = false;
+// 	
+	// $.photoNotesLabel.top = '0%';
+	// // $.photoNotes.top = '20%';
+	// // $.photoNotes.height = '40%';
+// 	
+	// $.photoDate.text += ' ' + data.getData().photoDate;
+	// $.photoPlace.text += ' ' + data.getData().photoPlace;
+	// // $.photoName.text += ' ' + data.getData().photoFirstName;
+	// // $.photoName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+	// // $.photoName.text += ' ' + args.photoFullName;
+	// $.photoNameF.text += ' ' + data.getData().photoFirstName;
+	// $.photoName.text += ' ' + data.getData().photoLastName;
+// 	
+// 	
+	// $.photoPeopleName.text += ' ' + data.getData().photoPeopleNames;
+	// $.photoEventName.text += ' ' + data.getData().photoEventName;
+	// $.photoOrg.text += ' ' + data.getData().photoOrg;
+	// $.photoMake.text += ' ' + data.getData().photoModel;
+	// // $.photoNotes.value += ' ' + data.getData().photoNotes;
+	// $.photoNotesLabel.text += ' ' + data.getData().photoNotes;
+	// $.photoTitle.text += ' ' + data.getData().photoTitle;
+	// $.photoLoc.text += ' ' + data.getData().photoLocation;
+	// $.photoMeasure.text += ' ' + data.getData().photoMeasurements;
+// 	
+// }
+// 
+// 
+// 
+// if(OS_IOS){
+	// // $.uploadedImage.image = data.getData().userPhoto || 'QL300.png';
+	// $.uploadedImage.image = args.customImage || 'QL300.png';
+// }else{
+	// // $.uploadedImage.image = data.getData().userPhoto || '/images/QL300.png';
+	// $.uploadedImage.image = args.customImage || '/images/QL300.png';
+// 	
+// }
+// 
+// var activityIndicator = Ti.UI.createActivityIndicator({
+	// color : 'black',
+	// font : {
+		// fontFamily : 'Helvetica Neue',
+		// fontSize : 26,
+		// fontWeight : 'bold'
+	// },
+	// message : 'Sending...',
+	// style : Ti.UI.ActivityIndicatorStyle.DARK,
+	// height : Ti.UI.SIZE,
+	// width : Ti.UI.SIZE
+// });
+// $.submitWin.add(activityIndicator);
+// 
+// function myreplacer(str){
+	// var mapObj = {
+	   // '>':'&gt;',
+	   // '<':'&lt;',
+	   // '&':'&amp;'
+	// };
+// 	
+	// str = str.replace(/<|>|&/gi, function(matched){
+	  // return mapObj[matched];
+	// });
+	// return str;
+// }
+// 
+// if (data.getData().resourceType == 'Scanned Material') {
+	// var scannedMaterial = data.getData().userPhoto;
+	// // var stringToSaveInDatabase = Ti.Utils.base64encode(scannedMaterial).toString();
+	// // if(stringToSaveInDatabase.length > 64){
+		// // var md5 = Ti.Utils.md5HexDigest(stringToSaveInDatabase);
+		// // var expected = 'b51747a51f685cfb684cf3e20918edeb';
+		// // Ti.UI.createAlertDialog({
+			// // title : 'md5',
+			// // message : ' '\nmd5: ' + md5 + '\nexpected: ' + expected
+		// // }).show();
+	// // }
+// // 	
+	// var absoluteParams = {
+		// userPhoto : stringToSaveInDatabase,
+		// submit : data.getData().submitType,
+		// resourceType : data.getData().resourceType,
+		// step : data.getData().photoStepNumber,
+// 		
+// 		
+		// // firstname : args.photoFullName[0],
+		// // lastname : args.photoFullName[1] || " ",
+// 		
+		// // firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+		// // lastname : args.photoFullName[0] || " ",
+// 		
+		// firstname : myreplacer(data.getData().photoFirstName),
+		// lastname : myreplacer(data.getData().photoLastName),
+// 		
+// 		
+		// lang : myreplacer(data.getData().photoLanguage),
+// 		
+		// right : data.getData().photoRights,
+		// title : myreplacer(data.getData().photoTitle),
+// 		
+		// memberType : data.getData().photoMemberType,
+// 		
+		// additional : myreplacer(data.getData().photoNotes),
+// 		
+		// scannedLocation: myreplacer(data.getData().photoLocation),
+		// measurements: myreplacer(data.getData().photoMeasurements),
+		// descriptionAbstract : myreplacer(data.getData().artifactType),
+		// artifactEvent : myreplacer(data.getData().photoEventName),
+		// artifactOrganization : myreplacer(data.getData().photoOrg),
+		// artifactPerson : myreplacer(data.getData().photoPeopleNames),
+		// // scanner : "Yes",
+		// scanner : myreplacer(data.getData().photoModel),
+		// year : myreplacer(data.getData().photoDate),
+		// email: Ti.App.Properties.getString('Email Address'),
+		// uploaderfname: Ti.App.Properties.getString('First Name'),
+		// uploaderlname: Ti.App.Properties.getString('Last Name'),
+		// mimeType: data.getData().mimeType,		
+	// };
+// } else {
+	// var stringToSaveInDatabase = Ti.Utils.base64encode(data.getData().userPhoto).toString();
+// 
+	// var absoluteParams = {
+		// userPhoto : stringToSaveInDatabase,
+		// submit : data.getData().submitType,
+		// resourceType : data.getData().resourceType,
+		// step : data.getData().photoStepNumber,
+// 		
+		// // firstname : args.photoFullName[0],
+		// // lastname : args.photoFullName[1] || " ",
+// 		
+		// // firstname : args.photoFullName[1]  + ' ' + args.photoFullName[2] || " " ,
+		// // lastname : args.photoFullName[0] || " ",
+// // 		
+		// firstname : myreplacer(data.getData().photoFirstName),
+		// lastname : myreplacer(data.getData().photoLastName),
+// 		
+		// // firstname : data.getData().photoFirstName,
+		// // lastname : data.getData().photoLastName,
+// 		
+		// lang : myreplacer(data.getData().photoLanguage),
+		// right : data.getData().photoRights,
+		// title : myreplacer(data.getData().photoTitle),
+		// memberType : data.getData().photoMemberType,
+// 		
+		// additional : myreplacer(data.getData().photoNotes),
+		// camera : myreplacer(data.getData().photoModel),
+		// events : myreplacer(data.getData().photoEventName),
+		// organization : myreplacer(data.getData().photoOrg),
+		// persons : myreplacer(data.getData().photoPeopleNames),
+		// photoLocation : myreplacer(data.getData().photoPlace),
+		// year : myreplacer(data.getData().photoDate),
+		// email: Ti.App.Properties.getString('Email Address'),
+		// uploaderfname: Ti.App.Properties.getString('First Name'),
+		// uploaderlname: Ti.App.Properties.getString('Last Name'),
+		// mimeType: data.getData().mimeType
+	// };
+// }
+// 
+// var submitPhoto = function(_options, _callback) {
+	// if (!Ti.Network.getOnline()){
+		// Alloy.Globals.displayWifiSettingsAlert();
+		// return;
+	// }
+// 	
+	// var xhr1 = Ti.Network.createHTTPClient({
+		// timeout : 60000
+	// });
+	// xhr1.open("POST", ACS_DIGITAL_PHOTO_UPLOAD_URL);
+// 
+	// xhr1.onerror = function(e) {
+		// _callback && _callback({
+			// success : false,
+			// error : e
+		// });
+		// activityIndicator.hide();
+		// console.log('onError!!');
+		// return;
+	// };
+// 
+	// xhr1.onload = function(e) {
+		// console.info(this.status);
+		// console.info(this.readyState);
+		// console.info(this.responseText);
+		// _callback && _callback({
+			// success : true,
+			// response : xhr1.responseText,
+		// });
+		// console.log('onLoad Success!!');
+		// return;
+	// };
+// 
+	// xhr1.setRequestHeader('Content-Type', 'application/json');
+	// xhr1.setRequestHeader('enctype', 'multipart/form-data');
+// 
+	// Ti.API.info("onLoad and onError functions set.....");
+	// Ti.API.info("Sending....." + xhr1.location);
+// 
+	// xhr1.send(_options);
+// };
+// 
+// var photocallback = function(_response) {
+	// activityIndicator.hide();
+	// Ti.API.debug('Sent: ' + JSON.stringify(_response, null, 2));
+	// if (_response.success) {
+		// var dialog = Ti.UI.createAlertDialog({
+			// message : 'Sent: Thank you for using the Queens Memory Upload Tool',
+			// ok : 'Okay',
+			// title : 'Submission Complete!'
+		// });
+// 		
+// 
+		// dialog.addEventListener('click', function(e) {
+			// $.submitWin.close();
+			// uploadScreenController = Alloy.createController('uploadScreen').getView();
+			// uploadScreenController.open();
+		// });
+		// dialog.show();
+	// } else {
+		// //alert('Something went wrong. Please try to submit again. \n' + JSON.stringify(_response.error.code) + '\n' + JSON.stringify(_response.error.source) + '\n');
+		 // alert('Something went wrong. Please try to submit again. \n');
+	// }
+// };
+// 
+// 
+// function submit(e) {
+	// activityIndicator.show();
+// 	
+	// var params = JSON.stringify(absoluteParams);
+	// var fullname = JSON.stringify(absoluteParams.firstname);
+// 	
+		// Ti.API.info('These are the current Params:' + params);
+		// Ti.API.info('This is the first name Params:' + fullname);
+// 		
+		// // Ti.API.info("Replacer in action submission" + JSON.stringify(fullname, replacer));
+// 		
+		// console.log("VIEW ARGS:" + JSON.stringify(params));
+// 
+	// submitPhoto(params, photocallback);
+// }
+// 
+// function backButton(e) {
+	// $.submitWin.close();
+// }
+// 
+// function slideMenu(e) {
+	// menuController = Alloy.createController('sliderMenu').getView();
+	// menuController.open();
+// }
+// 
+// //// PLAYGROUND
+// // var socket = Ti.Network.Socket.createTCP({
+	// // host : '172.16.100.34',
+	// // port : 8083,
+	// // connected : function(e) {
+		// // Ti.API.info('Socket opened!');
+		// // Ti.Stream.pump(e.socket, readCallback, 1024, true);
+		// // Ti.Stream.write(socket, Ti.createBuffer({
+			// // value : 'params'
+		// // }), writeCallback);
+	// // },
+	// // error : function(e) {
+		// // Ti.API.info('Error (' + e.errorCode + '): ' + e.error);
+	// // },
+// // });
+// // socket.connect();
+// // 
+// // function writeCallback(e) {
+	// // Ti.API.info('Successfully wrote to socket.');
+// // }
+// // 
+// // function readCallback(e) {
+	// // if (e.bytesProcessed == -1) {
+		// // // Error / EOF on socket. Do any cleanup here.
+// // 
+	// // }
+	// // try {
+		// // if (e.buffer) {
+			// // var received = e.buffer.toString();
+			// // Ti.API.info('Received: ' + received);
+		// // } else {
+			// // Ti.API.error('Error: read callback called with no buffer!');
+		// // }
+	// // } catch (ex) {
+		// // Ti.API.error(ex);
+	// // }
+// // }
+//
+
+
+submissionpagesound
+// function findChar(string){
+// if (string.includes("&" || ">" || "<")){
+// replaceChar(string);
+// }
+//
+// }
+
+// function replaceChar(str){
+// str=str.replace('&', '&amp;');
+// str=str.replace('<', '&lt;');
+// str=str.replace('>', '&gt;');
+// }
+
+// function replacer(str){
+// if (str.includes("&" || ">" || "<")){
+// // replaceChar(string);
+// str=str.replace('&', '&amp;');
+// str=str.replace('<', '&lt;');
+// str=str.replace('>', '&gt;');
+//
+// }
+//
+
+// firstname : data.getData().photoFirstName,
+			// lastname : data.getData().photoLastName,
+
+			// firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// lastname : args.photoFullName[0] || " ",
+			
+			
+		// firstname : data.getData().photoFirstName,
+			// lastname : data.getData().photoLastName,
+
+			// firstname : args.photoFullName[0],
+			// lastname : args.photoFullName[1] || " ",
+
+			// firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// lastname : args.photoFullName[0] || " ",
+			
+			
+			// firstname : args.photoFullName[0],
+			// lastname : args.photoFullName[1] || " ",
+			// lang : data.getData().photoLanguage,
+			// right : data.getData().photoRights,
+			// title : data.getData().photoTitle,
+			// memberType : data.getData().photoMemberType,
+			// additional : data.getData().photoNotes,
+			// faculty : data.getData().photoEventName,
+			// interviewDate : data.getData().timePeriod,
+			// interviewLocation : data.getData().photoInterviewLocation,
+			// interviewee : data.getData().photoInterviewee,
+			// organizationsInterview : data.getData().photoOrg,
+			// peopleInterview : data.getData().photoPeopleNames,
+			// placesInterview : data.getData().photoPlace,
+			// recorderMake : data.getData().photoModel,
+			// year : data.getData().photoDate,
+			// email : Ti.App.Properties.getString('Email Address'),
+			// uploaderfname : Ti.App.Properties.getString('First Name'),
+			// uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// mimeType : data.getData().mimeType
+			
+			
+			// args.photoFullName[0] + ' ' + args.photoFullName[1]
+			
+			
+			// firstname : data.getData().photoFirstName,
+			// lastname : data.getData().photoLastName,
+
+			// firstname : args.photoFullName[0],
+			// lastname : args.photoFullName[1] || " ",
+
+			// firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// lastname : args.photoFullName[0] || " ",
+			
+			
+			// firstname : data.getData().photoFirstName,
+			// lastname : data.getData().photoLastName,
+
+			// firstname : args.photoFullName[0],
+			// lastname : args.photoFullName[1] || " ",
+
+			// firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// lastname : args.photoFullName[0] || " ",
+			
+				// $.soundName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || " ";
+	// $.soundName.text += ' ' + data.getData().photoFullName[0] + ' ' + data.getData().photoFullName[1];
+
+	// $.soundName.text += ' ' + data.getData().photoFirstName + ' ' + data.getData().photoLastName;
+	// $.soundName.text += ' ' + data.getData().photoFullName[0] + ' ' + data.getData().photoFullName[1];
+	// $.soundName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+
+	// $.soundName.text += ' ' + args.photoFullName;
+	// $.soundName.text += ' ' + data.getData().photoFullName;
+
+console.log("Length of photodate text: " + args.photoDate.length);
+console.log("Length of phototitle text: " + args.photoTitle.length);
+console.log("Length of photoplace text: " + args.photoPlace.length);
+console.log("Length of photoFirstName text: " + args.photoFirstName.length);
+console.log("Length of photoLastName text: " + args.photoLastName.length);
+console.log("Length of photoPeopleNames text: " + args.photoPeopleNames.length);
+console.log("Length of photoEventName text: " + args.photoEventName.length);
+console.log("Length of photoOrg text: " + args.photoOrg.length);
+console.log("Length of photoModel text: " + args.photoModel.length);
+
+
+console.log("Length of time Period text: " + args.timePeriod.length);
+console.log("Length of Interview Location text: " + args.photoInterviewLocation.length);
+console.log("Length of Language text: " + args.photoLanguage.length);
+console.log("Length of photoInterviewee text: " + args.photoInterviewee.length);
+console.log("Length of photoPeople? text: " + args.photoPeople.length);
+
+console.log("Length of photoNotes text: " + args.photoNotes.length);
+
+
+
+// var args = arguments[0] || {};
+// var data = require('data');
+// 
+// if (OS_IOS) {
+	// $.QL.image = 'QL300.png';
+	// $.qp.image = 'QM_FINAL_outlines.png';
+// 
+// } else if (OS_ANDROID) {
+	// $.QL.image = '/images/QL300.png';
+	// $.qp.image = '/images/QM_FINAL_outlines.png';
+// }
+// 
+// $.Title.text = args.thisTitle || "Error, most like";
+// 
+// // Ti.API.Info("Submission Mimetype" + args.mimeType);
+// console.log("Submission Mimetype " + args.mimeType);
+// 
+// // var fullName = $.soundNameTA.value.toString();
+// 
+// console.log("Name: " + args.photoFullName);
+// // var fullName = args.photoFirstName;
+// // var Fname = fullName.split(" ");
+// // var FirstName = Fname[0];
+// // var LName = Fname[1];
+// // console.log("First Name: "+ FirstName + " Last Name: " + LName);
+// console.log("PhotofullName: " + args.photoFullName + " " + args.photoFullName[0] + " " + args.photoFullName[1] || " blank");
+// // var Lname =
+// 
+// console.log("photoDate: " + data.getData().photoDate);
+// //
+// console.log("photoInterViewLocation: " + data.getData().photoInterviewLocation);
+// 
+// // function findChar(string){
+// // if (string.includes("&" || ">" || "<")){
+// // replaceChar(string);
+// // }
+// //
+// // }
+// 
+// // function replaceChar(str){
+// // str=str.replace('&', '&amp;');
+// // str=str.replace('<', '&lt;');
+// // str=str.replace('>', '&gt;');
+// // }
+// 
+// // function replacer(str){
+// // if (str.includes("&" || ">" || "<")){
+// // // replaceChar(string);
+// // str=str.replace('&', '&amp;');
+// // str=str.replace('<', '&lt;');
+// // str=str.replace('>', '&gt;');
+// //
+// // }
+// // }
+// 
+// function replacer(i, str) {
+	// if (i.includes("&" || ">" || "<")) {
+		// // replaceChar(string);
+		// str = str.replace('&', '&amp;');
+		// str = str.replace('<', '&lt;');
+		// str = str.replace('>', '&gt;');
+// 
+	// } else {
+		// return str;
+	// }
+// }
+// 
+// if (args.thisTitle == "Oral History") {
+// 
+	// if (OS_IOS) {
+		// $.notesView.height = '40%';
+		// $.submissionsView.height = '100%';
+// 
+		// $.soundNotesLabel.top = '30%';
+// 
+	// }
+// 
+	// if (OS_ANDROID) {
+		// $.notesView.height = '200dp';
+		// $.submissionsView.height = '650dp';
+	// }
+// 
+	// $.soundMake.visible = false;
+// 
+	// $.soundPlace.text = "Interview Location: ";
+	// $.soundName.text = "Interviewee Name [First]: ";
+	// $.soundNameL.text = "Interviewee Name [Last]: ";
+// 
+	// $.photoDate.text += ' ' + data.getData().timePeriod;
+	// $.soundDate.text += ' ' + data.getData().photoDate;
+	// $.soundPlace.text += ' ' + data.getData().photoInterviewLocation;
+	// $.photoTitle.text += ' ' + data.getData().photoTitle;
+	// // $.soundName.text += ' ' + data.getData().photoFirstName + ' ' + data.getData().photoLastName;
+	// // $.soundName.text += ' ' + data.getData().photoFullName[0] + ' ' + data.getData().photoFullName[1];
+	// // $.soundName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || ' ';
+// 
+	// // $.soundName.text += ' ' + args.photoFullName;
+	// // $.soundName.text += ' ' + data.getData().photoFullName;
+// 
+	// $.soundName.text += ' ' + data.getData().photoFirstName;
+	// $.soundNameL.text += ' ' + data.getData().photoLastName;
+// 
+	// $.soundInterName.text += ' ' + data.getData().photoPeopleNames;
+// 
+	// $.soundLang.text += ' ' + data.getData().photoLanguage;
+	// $.soundInterviewPlace.text += ' ' + data.getData().photoPlace;
+	// $.soundEventName.text += ' ' + data.getData().photoEventName;
+	// $.soundPeopleName.text += ' ' + data.getData().photoPeople;
+	// $.soundOrg.text += ' ' + data.getData().photoOrg;
+	// $.soundMake.text += ' ' + data.getData().photoModel;
+	// $.soundMakeOralHist.text += ' ' + data.getData().photoModel;
+	// // $.soundNotes.value += ' ' + data.getData().photoNotes;
+	// $.soundNotesLabel.text += ' ' + data.getData().photoNotes;
+// }
+// 
+// if (args.thisTitle == "Wild Sound") {
+// 
+	// if (OS_IOS) {
+		// $.notesView.height = '40%';
+	// }
+// 
+	// // $.soundInterviewDate.visible = 'false';
+	// $.photoDate.visible = false;
+	// $.soundInterviewPlace.visible = false;
+	// $.soundInterName.visible = false;
+	// $.soundLang.visible = false;
+	// $.soundMakeOralHist.visible = false;
+// 
+	// $.soundName.text = "Recordist Name [First]: ";
+	// $.soundNameL.text = "Recordist Name [Last]: ";
+// 
+	// $.soundDate.top = '0%';
+	// $.soundPlace.top = '10%';
+	// $.photoTitle.top = '20%';
+	// $.soundName.top = '30%';
+	// $.soundNameL.top = '40%';
+	// $.soundEventName.top = '50%';
+	// $.soundPeopleName.top = '60%';
+	// $.soundOrg.top = '70%';
+	// $.soundMake.top = '80%';
+	// $.soundNotesLabel.top = '0%';
+	// // $.soundNotes.top = '0%';
+// 
+	// $.soundDate.text += ' ' + data.getData().photoDate;
+	// $.soundPlace.text += ' ' + data.getData().photoPlace;
+	// $.photoTitle.text += ' ' + data.getData().photoTitle;
+	// $.soundPeopleName.text += ' ' + data.getData().photoPeopleNames;
+	// // $.soundName.text += ' ' + args.photoFullName[0] + ' ' + args.photoFullName[1] || " ";
+// 
+	// $.soundName.text += ' ' + data.getData().photoFirstName;
+	// $.soundNameL.text += ' ' + data.getData().photoLastName;
+// 
+	// // $.soundName.text += ' ' + data.getData().photoFullName[0] + ' ' + data.getData().photoFullName[1];
+	// $.soundEventName.text += ' ' + data.getData().photoEventName;
+	// $.soundOrg.text += ' ' + data.getData().photoOrg;
+	// $.soundMake.text += ' ' + data.getData().photoModel;
+	// // $.soundNotes.value += ' ' + data.getData().photoNotes;
+	// $.soundNotesLabel.text += ' ' + data.getData().photoNotes;
+// 
+// }
+// 
+// // $.uploadedSound = data.getData().userPhoto || 'not available';
+// // $.uploadedSoundDurationLabel.text = args.customSound.playbackDuration  || "Size not available";
+// // $.uploadedSoundLabelURL.text = args.customSound.title || "Widthe not available";
+// // $.uploadedSoundLabelTime.text = args.customSound.artist || "Type not available";
+// 
+// var menuController;
+// var parent = _parent;
+// 
+// // var ACS_DIGITAL_SOUND_UPLOAD_URL = "http://172.16.100.34:8081/api/v1/valets";
+// var ACS_DIGITAL_SOUND_UPLOAD_URL = "http://devuploadapi.queenslibrary.org:8081/api/v1/valets/";
+// 
+// var absoluteParams;
+// 
+// Ti.API.info('These are the current params: ' + JSON.stringify(data));
+// 
+// // if(args.thisTitle == "Oral History"){}
+// //
+// // if(args.thisTitle == "Wild Sound"){}
+// 
+// var stringToSaveInDatabase;
+// var soundBlob = data.getData().userPhoto;
+// // if (OS_IOS) {
+// //
+// // } else {
+// // var md5 = Ti.Utils.md5HexDigest(soundBlob);
+// // stringToSaveInDatabase = Ti.Utils.base64encode(soundBlob).toString();
+// // if (stringToSaveInDatabase.length > 64) {
+// // var expected = 'b51747a51f685cfb684cf3e20918edeb';
+// // Ti.UI.createAlertDialog({
+// // title : 'md5',
+// // message : '\nmd5: ' + md5 + '\nexpected: ' + expected
+// // }).show();
+// // }
+// // }
+// 
+// function myreplacer(str) {
+	// var mapObj = {
+		// '>' : '&gt;',
+		// '<' : '&lt;',
+		// '&' : '&amp;'
+	// };
+// 
+	// str = str.replace(/<|>|&/gi, function(matched) {
+		// return mapObj[matched];
+	// });
+	// return str;
+// }
+// 
+// if (data.getData().resourceType == 'Oral History') {
+	// if (OS_IOS) {
+		// var absoluteParams = {
+			// userPhoto : soundBlob,
+			// submit : data.getData().submitType,
+			// resourceType : data.getData().resourceType,
+			// step : data.getData().photoStepNumber,
+			// // firstname : data.getData().photoFirstName,
+			// // lastname : data.getData().photoLastName,
+// 
+			// // firstname : args.photoFullName[0],
+			// // lastname : args.photoFullName[1] || " ",
+// 
+			// // firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// // lastname : args.photoFullName[0] || " ",
+// 
+			// firstname : myreplacer(data.getData().photoFirstName),
+			// lastname : myreplacer(data.getData().photoLastName),
+// 
+			// lang : myreplacer(data.getData().photoLanguage),
+// 
+			// right : data.getData().photoRights,
+			// title : myreplacer(data.getData().photoTitle),
+			// memberType : data.getData().photoMemberType,
+// 
+			// additional : myreplacer(data.getData().photoNotes),
+// 
+			// faculty : myreplacer(data.getData().photoEventName),
+// 
+			// interviewDate : myreplacer(data.getData().photoDate),
+// 
+			// interviewLocation : myreplacer(data.getData().photoInterviewLocation), //
+			// interviewee : myreplacer(data.getData().photoPeopleNames),
+// 
+			// organizationsInterview : myreplacer(data.getData().photoOrg),
+			// peopleInterview : myreplacer(data.getData().photoPeople),
+// 
+			// placesInterview : myreplacer(data.getData().photoPlace),
+			// recorderMake : myreplacer(data.getData().photoModel),
+			// year : myreplacer(data.getData().timePeriod),
+// 
+			// email : Ti.App.Properties.getString('Email Address'),
+			// uploaderfname : Ti.App.Properties.getString('First Name'),
+			// uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// mimeType : data.getData().mimeType,
+		// };
+	// } else {
+		// var absoluteParams = {
+			// userPhoto : stringToSaveInDatabase,
+			// submit : data.getData().submitType,
+			// resourceType : data.getData().resourceType,
+			// step : data.getData().photoStepNumber,
+			// // firstname : data.getData().photoFirstName,
+			// // lastname : data.getData().photoLastName,
+// 
+			// // firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// // lastname : args.photoFullName[0] || " ",
+// 
+			// firstname : myreplacer(data.getData().photoFirstName),
+			// lastname : myreplacer(data.getData().photoLastName),
+// 
+			// lang : myreplacer(data.getData().photoLanguage),
+// 
+			// right : data.getData().photoRights,
+// 
+			// title : myreplacer(data.getData().photoTitle),
+// 
+			// memberType : data.getData().photoMemberType,
+// 
+			// additional : myreplacer(data.getData().photoNotes),
+			// faculty : myreplacer(data.getData().photoEventName),
+			// interviewDate : myreplacer(data.getData().photoDate),
+			// interviewLocation : myreplacer(data.getData().photoInterviewLocation), //
+			// interviewee : myreplacer(data.getData().photoPeopleNames),
+			// organizationsInterview : myreplacer(data.getData().photoOrg),
+			// peopleInterview : myreplacer(data.getData().photoPeople),
+			// placesInterview : myreplacer(data.getData().photoPlace),
+			// recorderMake : myreplacer(data.getData().photoModel),
+			// year : myreplacer(data.getData().timePeriod),
+// 
+			// email : Ti.App.Properties.getString('Email Address'),
+			// uploaderfname : Ti.App.Properties.getString('First Name'),
+			// uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// mimeType : data.getData().mimeType,
+// 
+			// // firstname : args.photoFullName[0],
+			// // lastname : args.photoFullName[1] || " ",
+			// // lang : data.getData().photoLanguage,
+			// // right : data.getData().photoRights,
+			// // title : data.getData().photoTitle,
+			// // memberType : data.getData().photoMemberType,
+			// // additional : data.getData().photoNotes,
+			// // faculty : data.getData().photoEventName,
+			// // interviewDate : data.getData().timePeriod,
+			// // interviewLocation : data.getData().photoInterviewLocation,
+			// // interviewee : data.getData().photoInterviewee,
+			// // organizationsInterview : data.getData().photoOrg,
+			// // peopleInterview : data.getData().photoPeopleNames,
+			// // placesInterview : data.getData().photoPlace,
+			// // recorderMake : data.getData().photoModel,
+			// // year : data.getData().photoDate,
+			// // email : Ti.App.Properties.getString('Email Address'),
+			// // uploaderfname : Ti.App.Properties.getString('First Name'),
+			// // uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// // mimeType : data.getData().mimeType
+		// };
+	// }
+	// // args.photoFullName[0] + ' ' + args.photoFullName[1]
+// 
+// } else {
+	// if (OS_IOS) {
+		// var absoluteParams = {
+			// userPhoto : soundBlob,
+			// submit : data.getData().submitType,
+			// resourceType : data.getData().resourceType,
+			// step : data.getData().photoStepNumber,
+			// // firstname : data.getData().photoFirstName,
+			// // lastname : data.getData().photoLastName,
+// 
+			// // firstname : args.photoFullName[0],
+			// // lastname : args.photoFullName[1] || " ",
+// 
+			// // firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// // lastname : args.photoFullName[0] || " ",
+// 
+			// firstname : myreplacer(data.getData().photoFirstName),
+			// lastname : myreplacer(data.getData().photoLastName),
+// 
+			// lang : myreplacer(data.getData().photoLanguage),
+// 
+			// right : data.getData().photoRights,
+// 
+			// title : myreplacer(data.getData().photoTitle),
+// 
+			// memberType : data.getData().photoMemberType,
+// 
+			// additional : myreplacer(data.getData().photoNotes),
+			// recorderMake : myreplacer(data.getData().photoModel),
+			// recordingEvent : myreplacer(data.getData().photoEventName),
+			// recordingLocation : myreplacer(data.getData().photoPlace),
+			// recordingOrganization : myreplacer(data.getData().photoOrg),
+			// recordingPeople : myreplacer(data.getData().photoPeopleNames),
+			// year : myreplacer(data.getData().photoDate),
+// 
+			// email : Ti.App.Properties.getString('Email Address'),
+			// uploaderfname : Ti.App.Properties.getString('First Name'),
+			// uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// mimeType : data.getData().mimeType
+		// };
+	// } else {
+		// var absoluteParams = {
+			// userPhoto : stringToSaveInDatabase,
+			// submit : data.getData().submitType,
+			// resourceType : data.getData().resourceType,
+			// step : data.getData().photoStepNumber,
+			// // firstname : data.getData().photoFirstName,
+			// // lastname : data.getData().photoLastName,
+// 
+			// // firstname : args.photoFullName[0],
+			// // lastname : args.photoFullName[1] || " ",
+// 
+			// // firstname : args.photoFullName[1] + ' ' + args.photoFullName[2] || " " ,
+			// // lastname : args.photoFullName[0] || " ",
+// 
+			// firstname : myreplacer(data.getData().photoFirstName),
+			// lastname : myreplacer(data.getData().photoLastName),
+// 
+			// lang : myreplacer(data.getData().photoLanguage),
+// 
+			// right : data.getData().photoRights,
+// 
+			// title : myreplacer(data.getData().photoTitle),
+// 
+			// memberType : data.getData().photoMemberType,
+// 
+			// additional : myreplacer(data.getData().photoNotes),
+			// recorderMake : myreplacer(data.getData().photoModel),
+			// recordingEvent : myreplacer(data.getData().photoEventName),
+			// recordingLocation : myreplacer(data.getData().photoPlace),
+			// recordingOrganization : myreplacer(data.getData().photoOrg),
+			// recordingPeople : myreplacer(data.getData().photoPeopleNames),
+			// year : myreplacer(data.getData().photoDate),
+// 
+			// email : Ti.App.Properties.getString('Email Address'),
+			// uploaderfname : Ti.App.Properties.getString('First Name'),
+			// uploaderlname : Ti.App.Properties.getString('Last Name'),
+			// mimeType : data.getData().mimeType
+		// };
+	// }
+// }
+// 
+// var activityIndicator = Ti.UI.createActivityIndicator({
+	// color : 'black',
+	// font : {
+		// fontSize : 20,
+		// fontFamily : 'Montserrat-Regular',
+		// fontStyle : '',
+		// fontWeight : 'bold'
+	// },
+	// message : 'Sending...',
+	// style : Ti.UI.ActivityIndicatorStyle.DARK,
+	// // top:10,
+	// // left:10,
+	// height : Ti.UI.SIZE,
+	// width : Ti.UI.SIZE
+// });
+// 
+// $.soundSubmitContainer.add(activityIndicator);
+// 
+// var submitPhoto = function(_options, _callback) {
+	// if (!Ti.Network.getOnline()) {
+		// Alloy.Globals.displayWifiSettingsAlert();
+		// return;
+	// }
+// 
+	// var xhr1 = Ti.Network.createHTTPClient({
+		// timeout : 120000
+	// });
+	// xhr1.open("POST", ACS_DIGITAL_SOUND_UPLOAD_URL);
+// 
+	// xhr1.onerror = function(e) {
+		// _callback && _callback({
+			// success : false,
+			// error : e
+		// });
+		// activityIndicator.hide();
+		// console.log('onError!!');
+		// return;
+	// };
+// 
+	// xhr1.onload = function(e) {
+		// console.info(this.status);
+		// console.info(this.readyState);
+		// console.info(this.responseText);
+		// _callback && _callback({
+			// success : true,
+			// response : xhr1.responseText,
+		// });
+		// console.log('onLoad Success!!');
+		// return;
+	// };
+// 
+	// xhr1.setRequestHeader('Content-Type', 'application/json');
+	// xhr1.setRequestHeader('enctype', 'multipart/form-data');
+// 
+	// Ti.API.info("onLoad and onError functions set.....");
+	// Ti.API.info("Sending....." + xhr1.location);
+// 
+	// xhr1.send(_options);
+// };
+// 
+// var photocallback = function(_response) {
+	// activityIndicator.hide();
+	// Ti.API.debug('Sent: ' + JSON.stringify(_response, null, 2));
+	// if (_response.success) {
+		// var dialog = Ti.UI.createAlertDialog({
+			// message : 'Sent: Thank you for using the Queens Memory Upload Tool',
+			// ok : 'Okay',
+			// title : 'Submission Complete!'
+		// });
+// 
+		// dialog.addEventListener('click', function(e) {
+			// $.soundSubmitContainer.close();
+			// uploadScreenController = Alloy.createController('uploadScreen').getView();
+			// uploadScreenController.open();
+		// });
+		// dialog.show();
+	// } else {
+		// //alert('Something went wrong. Please try to submit again. \n' + JSON.stringify(_response.error.code) + '\n' + JSON.stringify(_response.error.source) + '\n');
+		// alert('Something went wrong. Please try to submit again. \n');
+	// }
+// };
+// 
+// function submit(e) {
+	// console.log("Activity indicator about to show");
+	// activityIndicator.show();
+	// console.log("Activity indicator shown");
+// 
+	// // console.log("Replacer in action" + JSON.stringify(absoluteParams, replacer));
+	// submitPhoto(JSON.stringify(absoluteParams), photocallback);
+	// // , replacer
+// }
+// 
+// function backButton(e) {
+	// $.soundSubmitContainer.close();
+// }
+// 
+// function slideMenu(e) {
+	// menuController = Alloy.createController('sliderMenu').getView();
+	// menuController.open();
+// }
+// 
+
+
+
+Wildsoundform
+
+<!-- <!-- <?xml version="1.0" encoding="UTF-8" ?> -->
+<!-- <Alloy>
+    <Window id="wildSoundWin" theme="mytheme">
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL"/> -->
+            <!-- <Button id="TnC">i</Button> -->
+        <!-- </View>
+        <View id="titleBan">
+            <ImageView id="qp"/>
+            <Label id="Title">Wild Sound</Label>
+        </View>
+        <ScrollView id="scrollView">
+            <View id="pickerView">
+                <Label id="provideInfo">Please provide the following information about your sound.</Label>
+      
+                <TextField id="dateTextArea"/>
+                <Label id="soundDate">Date sound recorded: </Label>
+				<Button class="helpButton" id="PDhelpButton" onClick="helpSubmit">b</Button>
+                <Label class="asterisk" platform="ios" left="45%" top="28%" >*</Label>
+                <Label class="asterisk" platform="android" left="43.5%" top="28%" >*</Label>
+
+                
+                <Label id="photoDate">Location of recording:</Label>
+                <Label class="asterisk" platform="ios" left="46%" top="52%">*</Label>
+                <Label class="asterisk" platform="android" left="44.5%" top="52%">*</Label>
+                <Button class="helpButton" id="PDDhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="arti" />
+                
+                <Label id="TitleLabel">Title of recording: </Label>
+                <TextField id="TitleLabelTA"/>
+              	<Button class="helpButton" id="PThelpButton" onClick="helpSubmit">b</Button>
+              	 <Label id="PTasterisk" class="asterisk" >*</Label>
+                
+            </View>
+            
+            <View id="soundView">
+ 
+               	<Label id="soundName"> Name of recordist [First]: </Label>
+                <TextField id="soundNameTA"/>
+                <Label class="asterisk" platform="ios" left="47%" top="0%">*</Label>
+                <Label class="asterisk" platform="android" left="49%" top="0.5%">*</Label> -->
+                <!-- <Button class="helpButton" id="PNhelpButton" onClick="helpSubmit">b</Button> -->
+                
+                <!-- <Label id="soundNameL"> Name of recordist [Last]: </Label>
+                <TextField id="soundNameLTA"/>
+                <Label class="asterisk" platform="ios" left="47%" top="11%">*</Label>
+                <Label class="asterisk" platform="android" left="49%" top="11.5%">*</Label> -->
+                <!-- <Button class="helpButton" id="PNLhelpButton" onClick="helpSubmit">b</Button> -->
+                
+               <!-- <Label id="soundEvent"> Name of event taking place in the recording: </Label>
+                <TextField id="soundEventTA"/>
+                <Button class="helpButton" id="PESNhelpButton" onClick="helpSubmit">b</Button>
+			 
+               <Label id="soundPeople"> People in the recording: </Label>
+                <Button class="helpButton" id="PPehelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="soundPeopleTA"/>
+                
+                <Label id="soundOrg"> Organizations associated with the recording: </Label>
+                <TextField id="soundOrgTA"/>
+                <Button class="helpButton" id="POhelpButton" onClick="helpSubmit">b</Button>
+                
+               <Label id="soundMake"> Make or model of recorder used: </Label>
+                <TextField id="soundMakeTA"/>
+                <Button class="helpButton" id="PMhelpButton" onClick="helpSubmit">b</Button>
+                
+               <Label id="soundNotes">Additional Notes:</Label>/>
+               <Label class="asterisk" platform="ios" left="36%" top="71%" >*</Label>
+               <Label class="asterisk" platform="android" left="36%" top="71%">*</Label>
+               <TextArea id="soundNoTA"/>
+               <Button class="helpButton" id="PNohelpButton" onClick="helpSubmit">b</Button>    
+                
+                <Button id="audioSelectBtn" onClick="showOptions"/>
+                <Button id="nextBtn" onClick="submit"/>
+                
+            </View>
+            
+            <View id="soundView2">
+            	
+              
+               <Button id="audioSelectBtniOS" onClick="showOptions"/>
+               <Button id="nextBtniOS" onClick="submit"/>
+            	
+            	
+            </View>
+            
+            
+        </ScrollView>
+    </Window>
+</Alloy> --> 
+
+function report(e) {
+	// alert('You changed the date!');
+	// Ti.API.info('User selected: ' + e.value);
+}
+
+// customDate : 'whatever',
+		// customImage : currentData['userPhoto'],
+		// customImageSize : scannedItem.size,
+		// photoFullName : $.soundPeopleNameTA.value.split(" "),
+		
+function replaceChar(str) {
+	str = str.replace('&', '&amp;');
+	str = str.replace('<', '&lt;');
+	str = str.replace('>', '&gt;');
+}
+
+function replacer(str) {
+	if (str.includes("&" || ">" || "<")) {
+		replaceChar(str);
+		// str=str.replace('&', '&amp;');
+		// str=str.replace('<', '&lt;');
+		// str=str.replace('>', '&gt;');
+
+	} else {
+		return str;
+	}
+}
+
+// console.log("Length of photodate text: " + args.photoDate.length);
+// console.log("Length of phototitle text: " + args.photoTitle.length);
+// console.log("Length of photoplace text: " + args.photoPlace.length);
+// console.log("Length of photoFirstName text: " + args.photoFirstName.length);
+// console.log("Length of photoLastName text: " + args.photoLastName.length);
+// console.log("Length of photoPeopleNames text: " + args.photoPeopleNames.length);
+// console.log("Length of photoEventName text: " + args.photoEventName.length);
+// console.log("Length of photoOrg text: " + args.photoOrg.length);
+// console.log("Length of photoModel text: " + args.photoModel.length);
+
+// console.log("top of photoplace text: " + $.photoPlace.top);
+// console.log("top of photoFirstName text: " + $.photoNameF.top);
+// console.log("top of photoLastName text: " + $.photoName.top);
+// console.log("top of photoPeopleNames text: " + $.photoPeopleName.top);
+// console.log("top of photoEventName text: " + $.photoEventName.top);
+// console.log("top of photoOrg text: " + $.photoOrg.top);
+// console.log("top of photoModel text: " + $.photoMake.top);
+
+// console.log("Length of photoLocation text: " + args.photoLocation.length);
+// console.log("Length of photoMeasure text: " + args.photoMeasurements.length);
+
+// console.log("Length of photoNotes text: " + args.photoNotes.length);
+
+
+	
+	console.log("top of photoDate text: " + $.photoDate.top);
+	console.log("top of photoTitle text: " + $.photoTitle.top);
+	console.log("top of photoplace text: " + $.photoPlace.top);
+	console.log("top of photoFirstName text: " + $.photoNameF.top);
+	console.log("top of photoLastName text: " + $.photoName.top);
+	console.log("top of photoPeopleNames text: " + $.photoPeopleName.top);
+	console.log("top of photoEventName text: " + $.photoEventName.top);
+	console.log("top of photoOrg text: " + $.photoOrg.top);
+	console.log("top of photoModel text: " + $.photoMake.top);
+
+	console.log("heighttoNum " + heighttoNum($.photoTitle.top, 4));
+	
+	// $.soundInterviewDate.visible = 'false';
+		// $.soundInterName.visible = false;
+	// $.soundLang.visible = false;
+	
+	// $.photoNotes.top = '20%';
+	// $.photoNotes.height = '40%';
+	
+
+
+
+
+
+Scanitem.js
+<<<<<<< HEAD
+								if (event.media.mimeType == "image/jpeg") {
+
+									var imgfile = ImageFactory.imageAsResized(event.media, {
+										width : event.media.width,
+										height : event.media.height,
+									});
+
+									var imageView = Ti.UI.createImageView({
+										image : imgfile,
+									});
+
+									scannedItem = imageView.toBlob();
+									scannedItemMimeType = scannedItem.mimeType;
+
+									imageView = null;
+									imgfile = null;
+									$.scanSrc.setTitle("Change Image");
+									alert("An image has been selected from the gallery!");
+								} else {
+									var imageView = Ti.UI.createImageView({
+										image : event.media,
+									});
+
+									scannedItem = imageView.toBlob();
+									scannedItemMimeType = scannedItem.mimeType;
+
+									imageView = null;
+									$.scanSrc.setTitle("Change Image");
+									alert("An image has been selected from the gallery!");
+								}
+
+=======
+
+
+	// $.photoDate.visible = false;
+	// $.soundInterviewPlace.visible = false;
+	// $.soundInterName.visible = false;
+	// $.soundLang.visible = false;
+	// $.photoDate.top = '0%';
+	// $.soundInterviewPlace.top = '0%';
+	// $.soundInterName.top = '0%';
+	// $.soundLang.top = '0%';
+	
+	
+<<<<<<<dkgjhdsflhdgkljdfhgjkkl
+	
+	
+	<!-- I hereby certify that I am at least eighteen years of age  and I voluntarily agree to transfer  my attached files to the Queens Borough Public Library (the “Library”), as part of the Library’s Queens Memory program to document life in the Borough of Queens, City of New York. 
+					
+I agree to share freely my file(s) under the terms of a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, available at the following site: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode, the terms of which I have read, reviewed, understood, and accept. I also waive any right to inspect or claim any form of remuneration for the Library’s use of the transferred file(s) in any Library publication, any other form of media published by the Library or any newspaper or other commercial media outlet.
+					
+Further, I agree to hold the Queens Borough Public Library, its affiliates, and their respective trustees, directors, employees, agents or assigns harmless from any claim, action, loss, damage or alleged infringement of any copyright, trademark, or other third-party property rights, caused by or arising from the publication, exhibition or telecast of the file(s) submitted to the Queens Borough Public Library under these terms and conditions.			
+				 -->
+				 
+I agree to freely share my interview (and other items listed above) under the terms of a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, available at the following site: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode, the terms of which I have read, reviewed, understood, and accept.
+	 
+	

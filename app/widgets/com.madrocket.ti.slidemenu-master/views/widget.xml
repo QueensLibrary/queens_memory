@@ -1,0 +1,13 @@
+<Alloy>
+  <View id="slideMenu">
+    <View id="leftDrawer" top="0" left="0" zIndex="1">
+
+    </View>
+    <View id="content" top="0" left="0" zIndex="10">
+
+    </View>
+    <View id="rightDrawer" top="0" right="0" zIndex="1">
+
+    </View>
+  </View>
+</Alloy>

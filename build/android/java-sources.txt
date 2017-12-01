@@ -1,0 +1,8 @@
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/android/support/v7/cardview/R.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/com/queenslibrary/QueensMemory/AssetCryptImpl.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/com/queenslibrary/QueensMemory/QueensMemoryActivity.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/com/queenslibrary/QueensMemory/QueensMemoryAppInfo.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/com/queenslibrary/QueensMemory/QueensMemoryApplication.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/com/queenslibrary/QueensMemory/R.java"
+"/Users/jongbusherpa/Documents/Appcelerator_Studio_Workspace/QueensMemory/build/android/gen/ti/modules/titanium/ui/R.java"

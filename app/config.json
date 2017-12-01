@@ -1,0 +1,16 @@
+{
+  "global": {},
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "os:windows": {},
+  "dependencies": {
+    "com.madrocket.ti.slidemenu": "0.2.1",
+    "thisWidget": "1.0",
+    "nl.fokkezb.drawer": "*"
+  }
+}

@@ -1,0 +1,17 @@
+android/ATTR_MINIFY=true
+android/ATTR_MINIFY.type=Boolean
+android/ATTR_PROJECT_NAME=QueensMemory
+android/ATTR_PROJECT_NAME.type=String
+android/distribute_path=/Users/jongbusherpa/Documents
+android/distribute_path.type=String
+android/key_password=
+android/key_password.type=String
+android/keystore_alias=qpl_mobile
+android/keystore_alias.type=String
+android/keystore_password=clearlyQBPL
+android/keystore_password.type=String
+android/keystore_path=/Users/jongbusherpa/Downloads/QPL Keystore/QPL.keystore
+android/keystore_path.type=String
+android/recent_output=/Users/jongbusherpa/Documents
+android/recent_output.type=String
+eclipse.preferences.version=1

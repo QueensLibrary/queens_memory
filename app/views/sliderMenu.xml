@@ -1,0 +1,71 @@
+<Alloy>
+	<Window id="sliderWin">
+		<ScrollView class="scrollView">
+			
+			<TableView id="rContainer" platform="ios">
+		                <TableViewRow >
+		                	<View id='tbServiceAlerts' >
+		                		<Label>About This App</Label>
+		                	</View>
+		                </TableViewRow>
+		                <!-- <TableViewRow >
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Service Alerts</Label>
+		                	</View>
+		                </TableViewRow> -->
+		                <TableViewRow onClick="openFormatView">
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Formats</Label>
+		                	</View>
+		                </TableViewRow>
+		                <TableViewRow >
+		                	<View id='tbServiceAlerts'>
+		                		<Label>FAQs</Label>
+		                	</View>
+		                </TableViewRow>
+		                <!-- <TableViewRow>
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Queens Memory Website////QPL App Actually</Label>
+		                	</View>
+		                </TableViewRow> -->
+		                <TableViewRow onClick="stayConnect">
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Stay Connected</Label>
+		                	</View>
+		                </TableViewRow>
+		                
+		                <TableViewRow>
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Privacy &amp; Terms</Label>
+		                	</View>
+		                </TableViewRow>
+		                <TableViewRow>
+		                	<View id='tbServiceAlerts'>
+		                		<Label>Version XX.XXX.XX</Label>
+		                	</View>
+		                </TableViewRow>
+		                
+		   		 </TableView>
+		   		 
+		   		 
+		   		 
+		   		 <Menu id="menu" platform="android">
+
+            <!-- Cannot specify node text.  Use attributes only. -->
+            		<!-- <MenuItem id="menuItem" title="Item 1" icon="item1.png" onClick="doClick" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" /> -->
+            		
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		<MenuItem id="menuItem" title="Item 1" onClick="doClick" />
+            		
+        		</Menu>
+		   		 
+		   		 
+		   		 
+		   	</ScrollView> 
+	</Window>
+</Alloy>

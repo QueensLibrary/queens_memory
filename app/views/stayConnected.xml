@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="connectWin">
+		<View id="banner2">
+			<Button id="back" onClick="backButton"> e </Button>
+			<ImageView id="qpl" image="/images/QL300.png"></ImageView>
+			<Button id="TnC" onClick="doAnimation" > i </Button>		
+		</View>	
+		
+		<ScrollView class="container">
+	        <View id="body">
+	            <Button id="facebookButton"  onClick="openFacebook" >FACEBOOK</Button>
+	            <Button id="twitterButton"   onClick="openTwitter" >TWITTER</Button>
+	            <Button id="instagramButton" onClick="openInstagram" >INSTAGRAM</Button>
+	            <Button id="tumblrButton"    onClick="openTumblr" >TUMBLR</Button>
+	            
+	        </View>
+	    </ScrollView>	
+    </Window>
+</Alloy>

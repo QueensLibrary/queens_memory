@@ -1,0 +1,46 @@
+<Alloy>
+  		<TableView id="rContainer" >
+                <TableViewRow >
+                	<View id='tbServiceAlerts' >
+                		<Label>About This App</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow >
+                	<View id='tbServiceAlerts'>
+                		<Label>Service Alerts</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow>
+                	<View id='tbServiceAlerts'>
+                		<Label>Formats</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow >
+                	<View id='tbServiceAlerts'>
+                		<Label>FAQs</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow>
+                	<View id='tbServiceAlerts'>
+                		<Label>App's Website 1</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow >
+                	<View id='tbServiceAlerts'>
+                		<Label>App's Website 2</Label>
+                	</View>
+                </TableViewRow>
+                
+                <TableViewRow>
+                	<View id='tbServiceAlerts'>
+                		<Label>Privacy &amp; Terms</Label>
+                	</View>
+                </TableViewRow>
+                <TableViewRow>
+                	<View id='tbServiceAlerts'>
+                		<Label>Version XX.XXX.XX</Label>
+                	</View>
+                </TableViewRow>
+   		 </TableView> 
+   		  
+</Alloy>

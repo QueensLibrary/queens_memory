@@ -1,0 +1,13 @@
+".container": {
+	backgroundColor:"black",
+	fullscreen: false,
+	
+	// height: Titanium.UI.FILL,
+	// width: Titanium.UI.SIZE,
+	// transform: 'rotate',
+	// layout: 'vertical'
+}
+
+
+
+

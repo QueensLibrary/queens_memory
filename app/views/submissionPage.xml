@@ -1,0 +1,58 @@
+<Alloy>
+    <Window id="submitWin">
+    	
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL" image="QL300.png"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        
+        <View id="titleBan">
+            <ImageView id="qp" image="QM_FINAL_outlines.png"/>
+            <Label id="Title">Submission Preview</Label>
+        </View>
+        
+        <ScrollView class="scrollView">
+        	
+        	
+	        <View id="pickerView">
+	            <ImageView id="uploadedImage"/>
+	            <Label id="subPrev"> Submission Preview </Label>
+	            <Label id="uploadIcon"> z </Label>
+	            <Label id="ImageInfo"> 1 Image to upload, and includes the following:</Label>
+	            <!-- Blank MB -->
+	       </View>    
+	            <!-- uploaded document thumbnail -->
+	       
+	        <View id="submissionsView">     
+	           
+	            <Label id="photoDate"> Date: </Label>
+	            <Label id="photoTitle">Title of item: </Label>
+	            <Label id="photoPlace"> Location: </Label>
+	            <Label id="photoNameF">  Photographer First: </Label>
+	            <Label id="photoName">  Photographer Last: </Label>
+	            <Label id="photoPeopleName"> Person/People Name: </Label>
+	            <Label id="photoEventName"> Event Name: </Label>
+	            <Label id="photoOrg"> Organizations: </Label>
+	            <Label id="photoMake"> Make/Model and/or Software used: </Label>
+	            <Label id="photoLoc"> Places Depicted: </Label>
+				<Label id="photoMeasure"> Measurements: </Label>
+	            <Label id="photoNotesLabel"> Additional Notes: </Label>
+	            <!-- <TextArea id="photoNotes"/> -->
+	            
+	        </View>
+	        
+	         <!-- <View id="notesView"> -->
+	        	<!-- <Label id="photoNotesLabel"> Additional Notes: </Label> -->
+	            <!-- <TextArea id="photoNotes"/> -->
+	        	
+	        <!-- </View> -->
+        
+        </ScrollView>
+        
+           <View id="bannerBottom">
+                <Button id="edit" onClick="backButton"> Edit </Button>
+                <Button id="next" onClick="submit"> Submit </Button>
+            </View>
+    </Window>
+</Alloy>

@@ -1,0 +1,84 @@
+<Alloy>
+    <Window id="soundSubmitContainer">
+ 
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL" image="QL300.png"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        
+        <View id="titleBan">
+            <ImageView id="qp" image="QM_FINAL_outlines.png"/>
+            <Label id="Title">Submission Preview</Label>
+        </View>
+        
+        <ScrollView class="scrollView">
+        	
+	        <View id="pickerView">
+	            <Label id="subPrev">Submission Preview</Label>
+	            <Label id="uploadIcon"> z </Label>
+	            <Label id="ImageInfo"> 1 audio file to upload, and includes the following:</Label>
+	            <!-- uploaded document thumbnail -->
+	        </View>
+	            
+	        <View id="submissionsView">
+
+                <Label id="photoDate">Time period(s):</Label>            
+	            <Label id="soundDateOral"> Date Recorded: </Label>	            
+	       		<Label id="soundPlaceOral"> Location: </Label>
+	       		<Label id="photoTitleOral">Title of item: </Label>
+	            <Label id="soundInterName"> Interviewer Name: </Label>
+	            <Label id="soundNameOral">  Track Name: </Label>	            
+	            <Label id="soundNameLOral"> Interviewer Name Last: </Label>
+	            <Label id="soundLangOral"> Language(s): </Label>
+	            <Label id="soundInterviewPlace">Discussed Interview Places:</Label> 	            
+	            <Label id="soundEventNameOral"> Event Name: </Label>
+	            <Label id="soundPeopleNameOral"> Person/People Name: </Label>
+	            <Label id="soundOrgOral"> Organizations: </Label>	            
+	            <Label id="soundMakeOral"> Make/Model and/or Software used: </Label>
+	        	<Label id="soundNotesLabelOral"> Additional Notes: </Label>
+	            
+	        </View>
+	        
+	        <View id="submissionsView2">
+	        	
+	            <Label id="soundDate"> Date Recorded: </Label>    
+	       		<Label id="soundPlace"> Location: </Label>
+	       		<Label id="photoTitle">Title of item: </Label>
+	            <Label id="soundName">  Track Name: </Label>            
+	            <Label id="soundNameL"> Interviewer Name Last: </Label>
+	            <Label id="soundEventName"> Event Name: </Label>
+	            <Label id="soundPeopleName"> Person/People Name: </Label>
+	            <Label id="soundOrg"> Organizations: </Label>            
+	            <Label id="soundMake"> Make/Model and/or Software used: </Label>
+	        	<Label id="soundNotesLabel"> Additional Notes: </Label>
+	            
+	        </View>
+	        
+	        
+	        <!-- <View id="notesView">
+	        	<Label id="photoDate">Time period(s):</Label>
+	            
+	            <Label id="soundDate"> Date Recorded: </Label>
+	            
+	       		<Label id="soundPlace"> Location: </Label>
+	       		<Label id="photoTitle">Title of item: </Label>
+	            <Label id="soundInterName"> Interviewer Name: </Label>
+	            <Label id="soundName">  Track Name: </Label>
+	        	 -->
+	        	<!-- <Label id="soundMakeOralHist"> Make/Model and/or Software used: </Label>
+	        	<Label id="soundNotesLabel"> Additional Notes: </Label> -->
+	            <!-- <TextArea id="soundNotes"/> -->
+	        	
+	        <!-- </View> -->
+        
+       </ScrollView>
+        
+        <View id="bannerBottom">
+            <Button id="edit" onClick="backButton"> Edit </Button>
+            <Button id="next" onClick="submit"> Submit </Button>
+        </View>
+        
+    </Window>
+</Alloy>
+

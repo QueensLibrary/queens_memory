@@ -1,0 +1,103 @@
+"#formatsWin" : {
+  backgroundColor: 'rgb(0,0,0,0.9)',
+  width: '100%',
+  // modal: true
+}
+
+// "#mover":{
+	// backgroundColor: "#white",
+	// height: "100", 
+	// width: "100", 
+	// top: "0", 
+	// right: "0",
+// }
+
+"#formatContainer" : {
+  backgroundColor: 'gray',
+  // width: '175',
+  // right: '0%',
+  borderColor: 'gray',
+  borderWidth: 0.5,
+}
+
+"Label":{
+	color: 'white',
+	left: '7%',
+	font:{
+		fontSize: 12,
+	},
+}
+
+"ListView":{
+	top: '5%',
+}
+
+"ListItem":{
+	backgroundColor: 'black',
+	color: 'white',
+	borderColor: 'black',
+	borderWidth: 5,
+	font:{
+		fontSize: 12,
+	},
+	height: '10%',
+}
+
+"Label":{
+	font:{
+		fontFamily: "Montserrat-Regular",
+	},
+	textAlign: 'center'
+}
+
+"Button":{
+	font:{
+		fontFamily: "Montserrat-Regular",
+	},
+}
+
+"#qpl": {
+	width: '33%',
+	top: '11%',
+	// height: '10%',
+	// right: '70%'
+}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	top: '3%',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+		
+	}
+}
+
+"#QMW":{
+	width: '35%',
+	top: '10%',
+
+}
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '3%',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+		
+	}
+}
+
+"#banner2": {
+	backgroundColor:'black',
+	top: '1%',
+	width: '100%',
+	height:'4%',
+	zIndex: 1,
+	font: {
+		fontSize: 14,
+	}
+}

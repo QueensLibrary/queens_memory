@@ -1,0 +1,123 @@
+if($uploadType=="Digital Photograph"){
+              $data = array(
+              "userPhoto" => $cfile, 
+              "submit" => "Upload Image",
+              "resourceType" => $uploadType, 
+              "step" => "3", 
+              "firstname"=>$passValues[3], 
+              "lastname" => $passValues[2] ,
+              "lang"=>"EN",
+              "right"=>"I am the rightful owner of this resource.",
+              "title"=>$passValues[0],
+              "memberType"=>"No membership",
+              "additional"=>$passValues[9],
+              "camera"=>$passValues[8],
+              "events"=>$passValues[6],
+              "organization"=>$passValues[7],
+              "persons"=>$passValues[5],
+              "photoLocation"=>$passValues[4],
+              "year"=>$passValues[1],
+              "email"=>$user->mail,
+              "uploaderfname"=>$firstname,
+              "uploaderlname"=>$lastname
+              );
+
+}else if($uploadType=="Scanned Material"){
+              $data = array(
+              "userPhoto" => $cfile, 
+              "submit" => "Upload Image",
+              "resourceType" => "Scanned Material" , 
+              "step" => "3", 
+              "firstname"=>$passValues[3], 
+              "lastname" => $passValues[2] ,
+              "lang"=>"EN",
+              "right"=>"I am the rightful owner of this resource.",
+              "title"=>$passValues[0],
+              "memberType"=>"No membership",
+              "additional"=>$passValues[11],
+              "scannedLocation"=>$passValues[9],
+              "measurements"=>$passValues[10],
+              "descriptionAbstract"=>$passValues[4],
+              "artifactEvent"=>$passValues[6],
+              "artifactOrganization"=>$passValues[7],
+              "artifactPerson"=>$passValues[5],
+              "scanner"=>$passValues[8],
+              "year"=>$passValues[1],
+              "email"=>$user->mail,
+              "uploaderfname"=>$firstname,
+              "uploaderlname"=>$lastname
+              );
+
+}else if($uploadType=="Oral History"){
+            //faculty has been assigned events and 
+            also firstname and lastname for this particular type is for Interviewee, 
+            use the interviewee for the interview
+              $data = array(
+              "userPhoto" => $cfile, 
+              "submit" => "Upload Image",
+              "resourceType" => $uploadType, 
+              "step" => "3",
+               
+              "firstname"=>$passValues[4], Interviewee
+              "lastname" => $passValues[3] , Interviewee
+              "lang"=>$passValues[12], lang
+              
+              "right"=>"I am the rightful owner of this resource.",
+              
+              "title"=>$passValues[0], title
+              
+              "memberType"=>"No membership",
+              
+              "additional"=>$passValues[13], notes
+              
+              "faculty"=>$passValues[7], event
+              
+              "interviewDate"=>$passValues[2], date recorded
+              
+              "interviewLocation"=>$passValues[6], interview location
+              
+              "interviewee"=>$passValues[5], interviewer -
+              
+              "organizationsInterview"=>$passValues[10], org -
+              
+              "peopleInterview"=>$passValues[9], people - 
+              
+              "placesInterview"=>$passValues[8], places -
+              
+              "recorderMake"=>$passValues[11], make -
+               
+              "year"=>$passValues[1], time period -
+               
+              "email"=>$user->mail,
+              "uploaderfname"=>$firstname,
+              "uploaderlname"=>$lastname);
+
+}else if($uploadType=="Sound Recording"){
+              $data = array(
+              "userPhoto" => $cfile, 
+              "submit" => "Upload Image",
+              "resourceType" => $uploadType, 
+              "step" => "3", 
+              
+              "firstname"=>$passValues[3], 
+              "lastname" => $passValues[2] ,
+              
+              "lang"=>"EN",
+              "right"=>"I am the rightful owner of this resource.",
+              
+              "title"=>$passValues[0], //title
+              
+              "memberType"=>"No membership",
+              
+              "additional"=>$passValues[9], //notes
+              "recorderMake"=>$passValues[8], //make
+              "recordingEvent"=>$passValues[5], //event
+              "recordingLocation"=>$passValues[4], //location
+              "recordingOrganization"=>$passValues[7], //org
+              "recordingPeople"=>$passValues[6], //people
+              "year"=>$passValues[1], //date recorded
+              
+              "email"=>$user->mail,
+              "uploaderfname"=>$firstname,
+              "uploaderlname"=>$lastname);
+          }

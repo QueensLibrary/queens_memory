@@ -1,0 +1,403 @@
+"#photoWin": {
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	title: 'Digital Photograph',
+	backgroundColor: '#000000',
+}
+
+"#photoWin[platform=android]": {windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN}
+
+
+
+"Label":{
+		font: {fontSize:'12',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+}
+
+"Button":{
+	font:{fontFamily: "Montserrat-Regular",},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	// center: ,
+}
+
+
+"Label[platform=android]":{
+	color: 'black',
+	font:{fontFamily: "Montserrat-Regular",
+		// fontFamily: "KozMinPro-ExtraLight"
+	},
+}
+
+"TextArea":{
+	color: 'black',
+	borderColor: 'gray',
+	borderRadius: '5',
+	left: '5%',
+	width: '90%',
+	height: '30%',
+	backgroundColor: 'white',
+	font:{fontFamily: "Montserrat-Regular",},
+	
+}
+
+"TextField":{
+	backgroundColor:'white',
+	left: '5%',
+	width: '90%',
+	borderColor: 'gray',
+	"borderRadius": "5",
+	font:{fontFamily: "Montserrat-Regular",},
+	color: 'black',
+	maxLength: '120',
+}
+
+
+"Button[platform=android]":{
+	color: 'black',
+	font:{fontFamily: "Montserrat-Regular",},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	// center: ,
+}
+
+".asterisk[platform=android formFactor=tablet]":{color: 'red',},
+".asterisk": {color: "red",textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,},
+".asterisk[platform=android]":{color: 'red',}
+".asterisk[formFactor=handheld]": {font: {fontSize:'20',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''}},
+
+".scrollView[platform=ios]": {	
+	top: '17%',
+	backgroundColor: "#e6e6e6",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true', //only IOS devices
+}
+
+"#pickerView[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue',
+	// height: '40%',
+	height: '55%',
+	width: '100%',
+	//layout: 'vertical'
+}
+
+"#pickerView[platform=android]": {
+	top: '0%',
+	backgroundColor: 'transparent',
+	// height: '250dp',
+	height: '300dp',
+	width: '100%',
+	// layout: 'vertical'
+}
+
+
+"#photoView2[platform=ios]": {
+	backgroundColor: 'transparent',
+	// backgroundColor: '#purple',
+	// top: '80%',
+	height: '75%',
+	// height: Titanium.UI.SIZE,
+}
+
+"#photoView3": {
+	backgroundColor: 'transparent',
+	// top: '80%',
+	height: '50%',
+	// height: Titanium.UI.SIZE,
+}
+
+
+////////////NavBar
+"#QL[platform=ios]": {width: '34%',top: '26%',	}
+"#QL[platform=android]": {width: '33%',top: '13%',}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	//top: '3%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+}
+
+"#back[platform=ios]":{top: '8%', font:{fontSize: 36,}}
+"#back[platform=android]":{top: '0%', font:{fontSize: 35,}}
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 40,	
+	}
+}
+
+"#navBar[platform=android]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	height: '15%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+"#navBar[platform=ios]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	// height: '10%',
+	height: '8%',
+	font: {
+		fontSize: 14,
+	},
+	zIndex: 0
+}
+
+
+"#titleBan[platform=ios]": {
+	backgroundColor:'white',
+	top:'7%',
+	// height: '25%',
+	height: '11%',
+	font: {fontSize: 12,}
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor:'white',
+	top:'7%',
+	// borderColor: 'red',
+	// borderWidth: '0.5', 
+	// height: '25%',
+	height: '15%',
+	font: {
+		fontSize: 12,
+	}
+}
+
+"#qp": {top: '12%',width: '30%',left: '7%',}
+// "#qp[platform=android]": {top: '1%',width: '30%',left: '7%',}
+
+"#Title": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '35%',
+	right: '5%',
+	font: {
+		fontWeight: 'bold',
+		fontSize: 18,
+		// fontFamily: "Montserrat-Regular",
+	}
+}
+
+"#Title[platform=android]": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '25%',
+	right: '5%',
+	font: {
+		fontWeight: 'bold',
+		fontSize: 18
+	}
+}
+
+// ////////BANNER
+'#provideInfoLabel': {
+	top: '7%',
+	left: '5%',
+	right: '5%',
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize:'12',fontFamily:'',fontStyle:'',fontWeight:''},
+}
+'#provideInfoLabel[platform=ios]': {top: '10%',}
+
+"#photoDateLabel": { top: '30%', left: '5%',}
+"#arti[platform=ios]": {height: '9.5%',}
+"#arti": {top: '38%',}
+"#PDhelpButton[platform=ios]": { top: '36%', right: '5%',}
+"#PDhelpButton[platform=android]": { top: '40%',}
+"#dateAsterisk[platform=ios]": {left: '43.5%', top: '28%',},
+"#dateAsterisk[platform=android]": {left: '46%', top: '28%',}   
+
+
+"#TitleLabel": {top: '54%',left: '5%',}
+"#PThelpButton": {top: '58%',}
+"#PThelpButton[platform=android]": {top: '62%',}
+"#TitleLabelTA[platform=ios]": {height: '9.5%',}
+"#TitleLabelTA": {top: '60%',}
+"#PTasterisk[platform=ios]":{top:'52%', left:'27%'},
+"#PTasterisk[platform=android]":{top:'52%', left:'28.5%'},
+
+
+"#photoPlace": {top: '79%',left: '5%',}
+"#PPhelpButton": {top: '83%',}
+"#PPhelpButton[platform=android]": {top: '87%',}
+"#photoPlaceTA": {top: '85%',left: '5%'}
+"#photoPlaceTA[platform=ios]": {height: '9.5%',}
+"#locAsterisk[platform=ios]": {left: '50%', top: '77%',},
+"#locAsterisk[platform=android]": {left: '51.5%', top: '77%',},
+
+
+
+//////Photoview2///////////////////////
+
+"#photoNameF": {top: '2%',left: '5%',}
+"#PNFhelpButton": {top: '4%',}
+"#PNFhelpButton[platform=android]": {top: '6%',}
+"#photoNameFTA": {top: '6%',left: '5%', height: '7%',}
+"#NameAsterisk[platform=ios]": {left: '55.5%', top: '0%',},
+"#NameAsterisk[platform=android]": {left: '57%', top: '1%',},
+
+"#photoName": {top: '18%',left: '5%',}
+"#PNasterisk[platform=ios]":{top: "16%",left: "55%",}
+"#PNasterisk[platform=android]":{top: "17%",left: "57.5%"}
+"#PNhelpButton": {top: '20%',}
+"#PNhelpButton[platform=android]": {top: '22%',}
+"#photoNameTA": {top: '22%',height: '7%',}
+
+"#photoPeopleName": {top: '34%',left: '5%',}
+"#photoPeopleNameTA": {top: '38%',height: '7%',}
+"#PPNhelpButton": {top: '36%',}
+"#PPNhelpButton[platform=android]": {top: '38%',}
+
+
+"#photoEventName": {top: '51%',left: '5%',}
+"#photoEventNameTA": {top: '55%',height: '7%',}
+"#PENhelpButton": {top: '53%',}
+"#PENhelpButton[platform=android]": {top: '55%',}
+
+
+"#photoOrg": {top: '67%',left: '5%',}
+"#photoOrgTA": {top: '71%',height: '7%',}
+"#POhelpButton": {top: '69%',}
+"#POhelpButton[platform=android]": {top: '71%',}
+
+
+"#photoMake": {top: '82%',left: '5%',}
+"#photoMakeTA": {top: '86%',height: '7%'
+	// value: 'Name of Camera Model'
+}
+"#PMhelpButton": {top: '84%',}
+"#PMhelpButton[platform=android]": {top: '86%',}
+
+
+
+///////photoview3
+
+"#photoNotes": {top: '2%',left: '5%',}
+"#photoNotesTA": {top: '8%',}
+"#PNohelpButton": {top: '6%',}
+"#PNohelpButton[platform=android]": {top: '11%',}
+"#notesAsterisk[platform=ios]": {left: '36%', top: '0%',},
+"#notesAsterisk[platform=android]": {left: '36%', top: '1%',}, 
+
+"#next[platform=ios]": {height: '13%',},
+"#next": {
+	top: '65%',
+	width: '40%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	color: 'black',
+	borderRadius: 5
+}
+
+"#imgSrc": {
+	top: '50%',
+	width: '70%',
+	backgroundColor: '#f2f2f2',
+	// backgroundColor: 'blue',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	
+}
+
+"#imgSrc[platform=ios]": {
+	// top: '50%',
+	// width: '70%',
+	height: '13%',	
+}
+
+
+".helpButton[platform=ios]": {
+	// top: '10%',
+	zIndex: 1,
+	right: '5%',
+	color: 'black',
+	//backgroundColor: 'transparent',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+	}
+}
+
+////////////////// ANDROID //////////////
+
+".scrollView[platform=android]": {	
+	top: '18%',
+	backgroundColor: "#e6e6e6",
+	// showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: 'auto',
+	layout: 'vertical',
+	scrollType: 'vertical'
+}
+
+"#photoView2[platform=android]": {
+	backgroundColor: 'transparent',
+	// backgroundColor: 'purple',
+	height: '550dp',
+	// height: Titanium.UI.SIZE,
+}
+
+
+"#photoView2[platform=android formFactor=tablet]": {
+	backgroundColor: 'transparent',
+	// backgroundColor: 'purple',
+	height: '100%',
+	// height: Titanium.UI.SIZE,
+} 
+
+
+"#photoView3[platform=android]": {
+	backgroundColor: 'transparent',
+	// backgroundColor: '#blue',
+	height: '350dp',
+	// height: Titanium.UI.SIZE,
+}
+
+
+"#photoView3[platform=android formFactor=tablet]": {
+	backgroundColor: 'transparent',
+	// backgroundColor: '#blue',
+	height: '60%',
+	// height: Titanium.UI.SIZE,
+} 
+
+
+///////photoview3
+
+".helpButton[platform=android]": {
+	zIndex: 1,
+	right: '6%',
+	width: '6%',
+	height:'7%',
+	color: 'black',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "Entypo",fontSize: 30,}
+} 
+
+
+
+

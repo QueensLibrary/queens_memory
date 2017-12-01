@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id='helpNoteWin' theme="mytheme">
+		
+		<View id='helpNoteView'>
+
+				<View id="navBar">
+					<!-- <Button id="back" onClick="backButton">T</Button> -->
+					<ImageView id="QL" image="/images/QL300.png"></ImageView>
+					<!-- <Button id="TnC">i</Button> -->
+				</View>
+				
+				<View id='titleBan'>
+					<ImageView id="qp" image="/images/QM_FINAL_outlines.png"></ImageView>
+					<Label id="Title">Title</Label>
+				</View>
+				
+				<Button id= "helpLogo" class="helpButton"> b </Button>
+				<Label id="helpTitle">Help Note</Label>
+				<Label id="Field">Field of helpButton</Label>
+				<Label id="helpNoteText">HELP TEXT</Label>
+				<Button id="submit" onClick="stopMe">Dismiss</Button>
+
+			</View>
+	</Window>
+</Alloy>

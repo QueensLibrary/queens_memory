@@ -1,0 +1,330 @@
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {fontSize:'12',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	color: "#000000",
+	ellipsize: Titanium.UITEXT_ELLIPSIZE_TRUNCATE_END
+},
+
+"#soundSubmitContainer": {
+	backgroundColor: '#e6e6e6',
+	backgroundDisabledColor: '#000000',
+},
+
+"#submissionsView": {
+	backgroundColor: 'transparent',
+	// backgroundColor: 'yellow',
+	top: '0%',
+	left: '0%',
+	width: '100%',
+	layout: 'vertical',
+},
+
+"#notesView":{
+	backgroundColor: 'transparent',
+	// backgroundColor: 'green',
+	// top: '0%',
+	left: '0%',
+	width: '100%',
+},
+
+"#submissionsView2": {
+	backgroundColor: 'transparent',
+	// backgroundColor: 'yellow',
+	top: '0%',
+	left: '0%',
+	// height: '100%',
+	width: '100%', 
+	layout: 'vertical',
+},
+
+
+"#submissionsView2[platform=ios]":{height: '100%',},
+"#submissionsView2[platform=android]":{height: '500dp',},
+
+"#pickerView[platform=ios]":{height: '30%',},
+"#pickerView[platform=android]":{height: '200dp',},
+
+"#notesView[platform=ios]":{height: '100%',},
+"#notesView[platform=android]":{height: '130dp',},
+
+"#submissionsView[platform=ios]":{height: '100%',},
+"#submissionsView[platform=android]":{height: '800dp',},
+
+".scrollView[platform=ios]": {	
+	top: '17%',
+	backgroundColor: "#e6e6e6",
+	// backgroundColor: "blue",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true', //only IOS devices
+},
+
+".scrollView[platform=android]": {	
+	top: '18%',
+	backgroundColor: "#e6e6e6",
+	// backgroundColor: 'red',
+	// showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: 'auto',
+	layout: 'vertical',
+	scrollType: 'vertical'
+},
+
+////////////NavBar
+// "#QL": {width: '25%',top: '13%',},
+// 
+// "#back":{
+	// left: '5%',
+	// color: 'white',
+	// top: '0%',
+	// backgroundColor:'transparent',
+	// borderColor: 'transparent',
+	// font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+// },
+// 
+// "#TnC": {
+	// right: '5%',
+	// color: 'white',
+	// top: '0%',
+	// backgroundColor:'transparent',
+	// borderColor: 'transparent',
+	// font:{fontFamily: "Entypo", fontSize: 40,}
+// },
+// 
+// "#navBar[platform=android]": {
+	// backgroundColor:'black',
+	// top: '0%',
+	// width: '100%',
+	// height: '5%',
+	// font: {fontSize: 14,},
+	// zIndex: 0
+// },
+// 
+// "#navBar[platform=ios]": {
+	// backgroundColor:'black',
+	// top: '0%',
+	// width: '100%',
+	// height: '5%',
+	// font: {fontSize: 14,},
+	// zIndex: 0
+// },
+// 
+// 
+// "#titleBan[platform=ios]": {
+	// backgroundColor:'white',
+	// top:'5%',
+	// height: '11%',
+	// font: {fontSize: 12,},
+// },
+// 
+// "#titleBan[platform=android]": {
+	// backgroundColor:'white',
+	// top:'5%',
+// 	 
+	// // height: '25%',
+	// height: '15%',
+	// font: {fontSize: 12,}
+// },
+
+"#QL[platform=ios]": {width: '34%',top: '26%',	}
+"#QL[platform=android]": {width: '33%',top: '13%',}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	//top: '3%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+}
+
+"#back[platform=ios]":{top: '8%', font:{fontSize: 36,}}
+"#back[platform=android]":{top: '0%', font:{fontSize: 35,}}
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 40,	
+	}
+}
+
+"#navBar[platform=android]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	height: '15%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+"#navBar[platform=ios]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	// height: '10%',
+	height: '8%',
+	font: {
+		fontSize: 14,
+	},
+	zIndex: 0
+}
+
+
+"#titleBan[platform=ios]": {
+	backgroundColor:'white',
+	top:'7%',
+	// height: '25%',
+	height: '11%',
+	font: {fontSize: 12,}
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor:'white',
+	top:'7%',
+	// borderColor: 'red',
+	// borderWidth: '0.5', 
+	// height: '25%',
+	height: '15%',
+	font: {
+		fontSize: 12,
+	}
+}
+
+"#qp": {top: '12%',width: '30%',left: '7%',}
+
+"#Title": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '35%',
+	right: '5%',
+	font: {fontWeight: 'bold',	fontSize: 18,}
+},
+
+"#Title[platform=android]": {
+	textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	top: '25%',
+	right: '5%',
+	font: {fontWeight: 'bold',fontSize: 18,}
+},
+
+// ////////BANNER
+
+"#uploadIcon":{
+	left: '16%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{fontFamily: "Entypo", fontSize: '50',}
+}
+
+"#uploadIcon[platform=android]":{top: '42%',}
+"#ImageInfo[platform=android]": {top: '46%',},
+
+"#uploadIcon[platform=ios]":{top: '40.3%',}
+"#ImageInfo[platform=ios]": {top: '53%',},
+
+"#subPrev[platform=android]": {top: '25%', left: '21.5%',},
+"#subPrev[platform=ios]":{top: '25%', left: '22%',}
+
+"#ImageInfo": {
+	font: {fontSize:'10',fontFamily:'',fontStyle:'',fontWeight:''},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	left: '5%',
+	"height": "6.72%",
+	"width": "100.09%",
+},
+
+"#subPrev": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	// minimumFontSize: '20',
+	// backgroundColor: 'transparent',
+	font: {fontSize:'20',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:'bold'},
+},
+
+"#photoDate":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundDate":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundPlace":{left: '5%', top: '1%', wordWrap: 'true',},
+"#photoTitle":{left: '5%', top: '1%', wordWrap: 'true',},
+//interviewee
+"#soundInterName": {left: '5%', top: '1%', wordWrap: 'true',},
+
+"#soundName":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundNameL":{left: '5%', top: '1%', wordWrap: 'true',},
+//interviewer
+"#soundLang":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundInterviewPlace": {left: '5%', top: '1%', wordWrap: 'true',},
+
+"#soundEventName":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundPeopleName": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundOrg": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundMake": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundNotesLabel": {left: '5%', top: '1%', wordWrap: 'true',},
+
+
+
+
+//oral
+"#photoDate":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundDateOral":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundPlaceOral":{left: '5%', top: '1%', wordWrap: 'true',},
+"#photoTitleOral":{left: '5%', top: '1%', wordWrap: 'true',},
+//interviewee
+"#soundInterName": {left: '5%', top: '1%', wordWrap: 'true',},
+
+"#soundNameOral":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundNameLOral":{left: '5%', top: '1%', wordWrap: 'true',},
+//interviewer
+"#soundLangOral":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundInterviewPlace": {left: '5%', top: '1%', wordWrap: 'true',},
+
+"#soundEventNameOral":{left: '5%', top: '1%', wordWrap: 'true',},
+"#soundPeopleNameOral": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundOrgOral": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundMakeOral": {left: '5%', top: '1%', wordWrap: 'true',},
+"#soundNotesLabelOral": {left: '5%', top: '1%', wordWrap: 'true',},
+
+
+
+
+"#bannerBottom": {
+	backgroundColor: '#ffffff',
+	height: '20%',
+	left: '0%',
+	top: '93%',
+	width: '100%',
+},
+
+"#next": {
+	top: '5%',
+	right: '5%',
+	width: '30%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	color: 'black',
+	borderRadius: 5
+},
+
+"#edit": {
+	top: '5%',
+	left: '5%',
+	width: '30%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	color: 'black',
+	borderRadius: 5,
+},
+
+"#next[platform=android]": {height: '20%',	"font": {fontWeight:'bold'},},
+"#edit[platform=android]": {height: '20%', 	"font": {fontWeight:'bold'},},

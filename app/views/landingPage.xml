@@ -1,0 +1,11 @@
+<Alloy>
+    <!-- <Require type="widget" src="com.madrocket.ti.slidemenu" id="menu" /> -->
+    <!-- <Widget id="menu" src="com.madrocket.ti.slidemenu" />	 -->
+    <View id="backDrop">
+        <ImageView id="QMW" image="/images/QMW-ink.png"></ImageView>
+        <Label id="thanks"> Thank you for being a contributor to </Label>
+        <Button id="startSession" onClick="startSession"> Start Upload Session </Button>
+        <ImageView id="QLL" image="QL-logo.png"></ImageView>
+        <Label id="buildNumber" />
+    </View>
+</Alloy>

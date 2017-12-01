@@ -1,0 +1,80 @@
+<!-- <?xml version="1.0" encoding="UTF-8" ?> -->
+<Alloy>
+    <Window id="wildSoundWin" theme="mytheme">
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        <View id="titleBan">
+            <ImageView id="qp"/>
+            <Label id="Title">Wild Sound</Label>
+        </View>
+        <ScrollView id="scrollView">
+            <View id="pickerView">
+                <Label id="provideInfo">Please provide the following information about your sound.</Label>
+      
+                <TextField id="dateTextArea"/>
+                <Label id="soundDate">Date sound recorded: </Label>
+				<Button class="helpButton" id="PDhelpButton" onClick="helpSubmit">b</Button>
+                <Label id="dateAsterisk" class="asterisk" >*</Label>
+   
+                <Label id="photoDate">Location of recording:</Label>
+                <Label id="locAsterisk" class="asterisk" >*</Label>
+                <Button class="helpButton" id="PDDhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="arti" />
+                
+                <Label id="TitleLabel">Title of recording: </Label>
+                <TextField id="TitleLabelTA"/>
+              	<Button class="helpButton" id="PThelpButton" onClick="helpSubmit">b</Button>
+              	 <Label id="PTasterisk" class="asterisk" >*</Label>        
+            </View>
+            
+            <View id="soundView">
+ 
+               	<Label id="soundName"> Name of recordist [First]: </Label>
+                <TextField id="soundNameTA"/>
+                <Label id="soundNameAsterisk" class="asterisk">*</Label>
+                
+                <Label id="soundNameL"> Name of recordist [Last]: </Label>
+                <TextField id="soundNameLTA"/>
+                <Label id="soundNameLAsterisk" class="asterisk">*</Label>
+                
+               <Label id="soundEvent"> Name of event taking place in the recording: </Label>
+                <TextField id="soundEventTA"/>
+                <Button class="helpButton" id="PESNhelpButton" onClick="helpSubmit">b</Button>
+			 
+               <Label id="soundPeople"> People in the recording: </Label>
+                <Button class="helpButton" id="PPehelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="soundPeopleTA"/>
+                
+                <Label id="soundOrg"> Organizations associated with the recording: </Label>
+                <TextField id="soundOrgTA"/>
+                <Button class="helpButton" id="POhelpButton" onClick="helpSubmit">b</Button>
+                
+               <Label id="soundMake"> Make or model of recorder used: </Label>
+                <TextField id="soundMakeTA"/>
+                <Button class="helpButton" id="PMhelpButton" onClick="helpSubmit">b</Button>
+                
+               <Label id="soundNotes">Additional Notes:</Label>/>
+               <Label id="notesAsterisk" class="asterisk">*</Label>
+               <TextArea id="soundNoTA"/>
+               <Button class="helpButton" id="PNohelpButton" onClick="helpSubmit">b</Button>    
+                
+               <Button id="audioSelectBtn" onClick="showOptions"/>
+                
+            </View>
+            
+            <View id="soundView2">
+            	
+            	<Button id="nextBtn" onClick="submit"/>
+
+               <Button id="audioSelectBtniOS" onClick="showOptions"/>
+               <Button id="nextBtniOS" onClick="submit"/>
+            
+            </View>
+            
+            
+        </ScrollView>
+    </Window>
+</Alloy>

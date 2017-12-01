@@ -1,0 +1,36 @@
+<Alloy>
+	<Window id='systemAlertWin' theme="mytheme">
+		<View id='systemAlertView'>
+			<View id="banner">
+				<View id="banner2">
+					<!-- <Button id="back" onClick="backButton">T</Button> -->
+					<ImageView id="QL" image="/images/QL300.png">
+					</ImageView>
+					<!-- <Button id="TnC"> i </Button> -->
+				</View>
+				<View id='titleBan'>
+					<ImageView id="qp" image="/images/QM_FINAL_outlines.png"></ImageView>
+					<Label id="Title">System Alerts</Label>
+				</View>
+			</View>
+			<ListView id="list" defaultItemTemplate="template1">
+				<Templates>
+					<!-- main template for displaying the list items -->
+					<ItemTemplate  id="template1" name="template1"  class="template1">
+						<View id="textContainer">
+							<Label id="textLabel" bindId="textLabel" class="title"/>
+							<Label id="detailLabel" bindId="detailLabel" class="detail"/>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<!-- we only have one section and the items are contstucted using template1 -->
+				<ListSection id="section" >
+					<ListItem template="template1"/>
+				</ListSection>
+			</ListView>
+			<Button id = "stop" onClick="stopMe">
+				Close
+			</Button>
+		</View>
+	</Window>
+</Alloy>

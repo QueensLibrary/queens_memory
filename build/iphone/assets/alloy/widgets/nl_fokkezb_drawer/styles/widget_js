@@ -1,0 +1,1 @@
+function WPATH(e){var t=e.lastIndexOf("/"),i=t===-1?"nl.fokkezb.drawer/"+e:e.substring(0,t)+"/nl.fokkezb.drawer/"+e.substring(t+1);return 0!==i.indexOf("/")?"/"+i:i}module.exports=[{isApi:!0,priority:1000.0001,key:"Window",style:{orientationModes:[Ti.UI.PORTRAIT]}},{isApi:!0,priority:1000.0002,key:"Button",style:{}}];

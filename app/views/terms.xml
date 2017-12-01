@@ -1,0 +1,47 @@
+<!-- <?xml version="1.0" encoding="UTF-8" ?> --><!-- <View> at line 14 is using this view's default ID "terms". Only a top-level element in a view should use the default ID --><Alloy>
+    <Window id="termsWin" theme="mytheme">
+    	<!-- backgroundColor="#000" -->
+    	<!-- statusBarStyle="Ti.UI.iPhone.StatusBar.OPAQUE_BLACK" -->
+    	
+        <View id="banner">
+            <View id="libLogo">
+                <ImageView id="qpl" image="/images/QL-logo.png"/>
+            </View>
+            
+            <View id="titleBan">
+                <ImageView id="qp" image="/images/QM_FINAL_outlines.png"/>
+                <Label id="Title"> Terms &amp; Conditions </Label>
+            </View>
+        </View>
+        
+        <ScrollView class="scrollView">
+            <View id="termsView">
+                <Label id="doYou"> Do you agree to the following terms and conditions?</Label>
+                <Label id="termsnC" autoLink="Titanium.UI.AUTOLINK_URLS"> 
+				The Terms and Conditions agreement can act as a legal contract between you, the mobile app owner or developer, and the users of your app. Like a Terms and Conditions for a website, this agreement for a mobile app would set the rules and terms that users must follow in order to use your app.
+				</Label>
+                <Label class="asterisk" id="asterisk">*</Label>
+                <Label id="field"> denotes required fields.</Label>
+            </View>
+            
+            <View id="view2">
+                <Label id="firstName"> First Name</Label>
+                <Label class="asterisk" id="fAsterisk">*</Label>
+                <TextField id="fText"/>
+                <Label id="lastName"> Last Name</Label>
+                <Label class="asterisk" id="lAsterisk">*</Label>
+                <TextField id="lText"/>
+                <Label id="email"> Email Address</Label>
+                <Label class="asterisk" id="eAsterisk">*</Label>
+                
+                <Button class="helpButton" id="EmailhelpButton" onClick="helpSubmit"> b </Button>
+                
+                <TextField id="emailA"/>
+                <Label id="rememberMe"> Remember Me </Label>
+                <Switch id="checkBox"> Remember Me </Switch>
+                <Button id="submit" onClick="submit"> Agree </Button>
+                <Button id="stop" onClick="stopMe"> Cancel </Button>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>

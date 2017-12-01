@@ -1,0 +1,49 @@
+"#sliderWin" : {
+  //backgroundColor: 'rgb(0,0,0,0.9)',
+  // backgroundColor: 'transparent',
+  width: '50%',
+  right: '0%',
+  top: '5%',
+  zIndex: 0,
+  // modal: true
+}
+
+// "#mover":{
+	// backgroundColor: "#white",
+	// height: "100", 
+	// width: "100", 
+	// top: "0", 
+	// right: "0",
+// }
+
+"#rContainer" : {
+  backgroundColor: 'gray',
+  // width: '175',
+  right: '0%',
+  borderColor: 'gray',
+  borderWidth: 0.5,
+}
+
+"Label":{
+	color: 'white',
+	left: '7%',
+	font:{
+		fontSize: 12,
+	},
+}
+
+"TableViewRow":{
+	color: 'white',
+	borderColor: 'black',
+	borderWidth: 5,
+	font:{
+		fontSize: 12,
+	},
+	height: '10%',
+}
+
+"#tbServiceAlerts":{
+	// title: 'Service Alerts',
+	borderColor: 'black',
+	height: Titanium.UI.FILL,
+}

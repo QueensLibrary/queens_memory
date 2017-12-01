@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="index">
+		<View class="container" onClick="onItemClick" onSwipe="onSwipe">
+			<Label id="title" />
+			<ImageView id="icon" />
+		</View>
+		<View class="separator" />
+	</View>
+</Alloy>

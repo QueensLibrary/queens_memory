@@ -1,0 +1,17 @@
+"#lContainer" : {
+  backgroundColor: 'gray',
+  width: '175',
+  left: '0%',
+}
+
+"TableViewRow":{
+	color: 'white',
+	borderColor: 'black',
+	// width: '70%'
+}
+
+"#appInfo":{
+	borderColor: 'black'
+}
+
+

@@ -1,0 +1,355 @@
+"#wildSoundWin": {backgroundColor: '#000000'},
+"#wildSoundWin[platform=android]": {windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN}
+
+"Label": {
+	font: {fontSize:'12',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	color: 'black',
+},
+
+"TextField": {
+	backgroundColor:'white',
+	left: '5%',
+	width: '90%',
+	borderColor: 'gray',
+	borderRadius: '5',
+	font:{fontFamily: "Montserrat-Regular",},
+	color: 'black',
+	// maxLength: '140',
+	maxLength: '120',
+},
+
+"TextField[platform=ios]": {
+	borderColor: '#919191',
+	borderRadius: '5',
+	// height: '13%'
+},
+
+"TextArea":{
+	color: 'black',
+	borderColor: 'gray',
+	borderRadius: '5',
+	left: '5%',
+	width: '90%',
+	height: '10%',
+	backgroundColor: 'white',
+	font:{fontFamily: "Montserrat-Regular",},
+},
+
+".asterisk": {color: 'red',},
+".asterisk[formFactor=handheld]": {
+	"font": {fontSize:'20',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''}
+},
+
+"#QL[platform=ios formFactor=tablet]": {"top": "25.00%","left": "40%"},
+
+"Button[platform=ios]":{font:{fontFamily: "Montserrat-Regular",},},
+
+".helpButton": {
+	zIndex: 1,
+	right: '5%',
+	width: '7%',
+	height:'6%',
+	color: 'black',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+	}
+},
+
+".helpButton[platform=ios]": {
+	right: '5%',
+	color: 'black',
+	zIndex: 1,
+	font:{
+		fontFamily: "Entypo",
+		fontSize: 30,
+	}
+}
+
+
+"ImageView[platform=android]": {},
+
+////////////NavBar
+// "#QL": {width: '33%',top: '13%',}
+
+"#QL[platform=ios]": {width: '34%',top: '26%',	}
+"#QL[platform=android]": {width: '33%',top: '13%',}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	// top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+}
+
+"#back[platform=ios]":{top: '8%', font:{fontSize: 36,}}
+"#back[platform=android]":{top: '0%', font:{fontSize: 35,}}
+
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "Entypo",fontSize: 40,}
+}
+
+"#navBar[platform=ios]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	// height: '5%',
+	height: '8%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+
+"#navBar[platform=android]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	height: '15%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+
+"#titleBan[platform=ios]": {
+	backgroundColor:'white',
+	// top:'5%',
+	top:'7%',
+	height: '20%',
+	font: {	fontSize: 12,}
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor:'white',
+	top:'7%',
+	// borderColor: 'red',
+	// height: '25%',
+	height: '20%',
+	font: {fontSize: 12,}
+}
+
+"#qp": {top: '8%',width: '30%',left: '7%'}
+
+"#Title": {
+	// textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	color: 'black',
+	top: '15%',
+	right: '5%',
+	// text: "Oral History",
+	// borderColor: 'red',
+	font: {
+		fontWeight: 'bold',
+		fontSize: 18
+	}
+}
+
+////////BANNER
+
+"#scrollView[platform=ios]": {	
+	// top: '15%',
+	top: '17%',
+	backgroundColor: "#e6e6e6",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true', //only IOS devices
+},
+
+"#scrollView[platform=android]": {	
+	top: '18%',
+	backgroundColor: "#e6e6e6",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+},
+
+"#pickerView[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue',
+	height: '55%',
+	width: '100%',
+}
+
+"#pickerView[platform=android]": {
+	top: '0%',
+	left: '0%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue',
+	height: '300dp',
+}
+
+
+"#provideInfo": {
+	top: '13%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize:'12',fontFamily:'',fontStyle:'',fontWeight:''},
+	wordWrap: 'true',
+},
+
+"#provideInfo[platform=ios]": {
+	top: '11%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize:'10',fontFamily:'',fontStyle:'',fontWeight:''},
+	wordWrap: 'true',
+},
+
+"#soundDate": {left: '5%',top: '30%',},
+	// hintText: "Touch to select date or enter your own date.",
+"#dateTextArea": {left: '5%',top: '38%',},
+"#dateTextArea[platform=ios]": {height: '11%'},
+"#PDhelpButton": {top: '40%',},
+"#PDhelpButton[platform=ios]": {top: '40%',},
+"#dateAsterisk[platform=ios]": {left: '42%', top: '28%',},
+"#dateAsterisk[platform=android]": {left: '43.5%', top: '28%',},
+
+"#photoDate":{top: '54%',left: '5%',},
+"#arti":{top: '60%',},
+"#arti[platform=ios]": {height: '11%'},
+// "#arti":{top: '75%',},
+"#PDDhelpButton": {top: '63%',},
+"#PDDhelpButton[platform=ios]": {top: '62%',},
+"#locAsterisk[platform=ios]": {left: '42.5%', top: '52%',},
+"#locAsterisk[platform=android]": {left: '44.5%', top: '52%',},
+
+
+
+"#TitleLabel": {top: '79%',left: '5%',},
+"#PThelpButton": {top: '87%',},
+"#PThelpButton[platform=android]": {top: '88%',}
+"#TitleLabelTA": {top: '85%',},
+"#TitleLabelTA[platform=ios]": {height: '11%'},
+// "#TitleLabelTA[platform=android]": {top: '70%',},
+"#PTasterisk[platform=ios]":{top:'76.5%', left:'36%'},
+"#PTasterisk[platform=android]":{top:'77%', left:'36.5%'},
+
+"#soundView": {
+	left: '0%',
+	width: '100%',
+	height: '100%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue'
+},
+"#soundView[platform=android]": {left: '0%',height: '675dp',},
+
+"#soundView2": {width: '100%',backgroundColor: 'transparent'},
+"#soundView2[platform=ios]": {left: '0%', height: '30%',},  
+"#soundView2[platform=android]": {left: '0%',height: '100dp',},
+
+
+"#soundName": {top: '1%',left: '5%',},
+"#soundNameTA": {top: '4%',left: '5%',},
+"#soundNameTA[platform=ios]": {height: '6%'},
+"#PNhelpButton": {top: '4%',},
+"#PNhelpButton[platform=android]": {top: '3%',},
+"#soundNameAsterisk[platform=ios]": {left: '47%', top: '0%',},
+"#soundNameAsterisk[platform=android]": {left: '49%', top: '0.5%',},
+
+
+"#soundNameL": {top: '12%',left: '5%',},
+"#soundNameLTA": {top: '15%',left: '5%',},
+"#soundNameLTA[platform=ios]": {height: '6%'},
+"#PNLhelpButton": {top: '15%',},
+"#PNLhelpButton[platform=android]": {top: '14%',},
+"#soundNameLAsterisk[platform=ios]": {left: '47%', top: '10%',},
+"#soundNameLAsterisk[platform=android]": {left: '49%', top: '11.5%',},
+
+
+"#soundEvent": {top: '24%',left: '5%',},
+"#soundEventTA": {top: '27%',left: '5%',},
+"#soundEventTA[platform=ios]": {height: '6%'},
+"#PESNhelpButton": {top: '27%',},
+"#PESNhelpButton[platform=android]": {top: '26%',},
+
+"#soundPeople": {top: '36%',left: '5%',},
+"#soundPeopleTA": {top: '39%',left: '5%',},
+"#soundPeopleTA[platform=ios]": {height: '6%'},
+"#PPehelpButton": {top: '39%',},
+"#PPehelpButton[platform=android]": {top: '38%',},
+
+"#soundOrg": {top: '48%',left: '5%',},
+"#soundOrgTA": {top: '51%',left: '5%',},
+"#soundOrgTA[platform=ios]": {height: '6%'},
+"#POhelpButton": {top: '51%',},
+"#POhelpButton[platform=android]": {top: '50%',},
+
+"#soundMake": {top: '60%',left: '5%',},
+"#soundMakeTA": {top: '63%',left: '5%',},
+"#soundMakeTA[platform=ios]": {height: '6%'},
+"#PMhelpButton": {top: '62%',},
+
+"#soundNotes": {top: '72%',left: '5%',},
+"#soundNoTA": {top: '75%',left: '5%',},
+"#soundNoTA[platform=ios]": {height: '15%'},
+"#PNohelpButton[platform=ios]": {width:'8%'},
+"#PNohelpButton": {top: '75%', },
+"#notesAsterisk[platform=ios]": {left: '36%', top: '70.7%',},
+"#notesAsterisk[platform=android]": {left: '36%', top: '71%',},
+
+
+
+"#audioSelectBtn": {
+	title: 'CLICK TO ADD SOUND',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'16',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '70%',
+},
+
+"#nextBtn": {
+	title: 'Next',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'16',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '40%',
+},
+
+"#audioSelectBtniOS": {
+	title: 'CLICK TO ADD SOUND',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'16',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '70%',
+},
+
+"#nextBtniOS": {
+	title: 'Next',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'16',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '40%',
+},
+
+
+
+"#audioSelectBtniOS[platform=ios]": {top: '0%', },
+"#nextBtniOS[platform=ios]": {top: '25%', }
+
+"#audioSelectBtn[platform=android]": {top: '92%',},
+"#nextBtn[platform=android]": {top: '0%',}

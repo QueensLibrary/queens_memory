@@ -1,0 +1,131 @@
+<Alloy>
+    <Window id="scanWin" theme="mytheme">
+        <View id="navBar">
+            <Button id="back" onClick="backButton">T</Button>
+            <ImageView id="QL" image="/images/QL300.png"/>
+            <!-- <Button id="TnC">i</Button> -->
+        </View>
+        <View id="titleBan">
+            <ImageView id="qp" image="/images/QM_FINAL_outlines.png"/>
+            <Label id="Title">Scanned Item </Label>
+        </View>
+        
+        <OptionDialog cancel="3" id="dialog">
+            <!-- The Options tag sets the options property. -->
+            <Options>
+                <Option>Camera</Option>
+                <Option>Photo Gallery</Option>
+                <Option platform="android">Help</Option>
+                <Option>Cancel</Option>
+            </Options>
+            <!-- The ButtonNames tag sets the Android-only buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>Help</ButtonName>
+            </ButtonNames>
+            <!-- Add a View for the androidView property here. -->
+        </OptionDialog>
+        
+        
+        
+        <ScrollView class="scrollView">
+            <View id="pickerView">
+            	
+            	<!-- <OptionDialog cancel="13" id="artifactPickers">
+                    <Options>
+                        <Option>Photo Print</Option>
+                        <Option>Photo negative</Option>
+                        <Option>Photo positive</Option>
+                        <Option>Ephemera</Option>
+                        <Option>Leaflet</Option>
+                        <Option>Manuscript</Option>
+                        <Option>Diary</Option>
+                        <Option>Clipping</Option>
+                        <Option>Advertisement</Option>
+                        <Option>Album</Option>
+                        <Option>Broadside</Option>
+                        <Option>Cartoon</Option>
+                        <Option>Other</Option>
+                      -->   <!-- <Option platform="android">Help</Option> -->
+                        <!-- <Option>Cancel</Option>
+                    </Options> -->
+                    <!-- The ButtonNames tag sets the Android-only buttonNames property. -->
+                   
+                    <!-- Add a View for the androidView property here. -->
+         		<!-- </OptionDialog> -->
+         		
+                <Label id="provideInfo">Please provide the following information about your scanned artifact.</Label>
+                
+                <Label id="photoDate">Date physical object was created:</Label>
+                <Label id="dateAsterisk" class="asterisk" >*</Label>
+                <TextField id="arti" />
+                <Button class="helpButton" id="PDhelpButton" onClick="helpSubmit">b</Button>
+              
+              
+                <Label id="TitleLabel">Title of item: </Label>
+                <Button class="helpButton" id="PThelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="TitleLabelTA"/>
+                <Label id="PTasterisk" class="asterisk" >*</Label>
+                
+                <Label id="photoPlace">Type of artifact you scanned:</Label>
+               	<Label id="locAsterisk" class="asterisk" >*</Label>  	
+                <Button id="dropDownButton" onSingletap="showArtifact" >U</Button>
+                <TextField id="artifactText" platform="android" onFocus="hideSoftKeyboard"  />
+                <TextField id="artifactText" platform="ios" />
+                 <!-- onBlur="" -->
+                <!-- onClick="showArtifact"   --> 
+                <!-- onLongpress="showArtifact"  -->
+                <!-- onLongclick="showArtifact" -->
+            </View>
+            
+            <View id="photoView2">
+             
+                <Label id="photoNameF">Name of artifact's creator [First]:</Label>
+                <Label id="NameAsterisk" class="asterisk">*</Label>
+                <TextField id="photoNF"/>
+                
+                <Label id="photoName">Name of artifact's creator [Last]:</Label>
+                <Label id="NameLAsterisk" class="asterisk">*</Label>
+                <TextField id="photoN"/>
+                
+                <Label id="photoPeopleName">Name(s) of person/people represented in the artifact:</Label>
+                <Button class="helpButton" id="PPNhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoPN"/>
+                
+                <Label id="photoEventName">Name(s) of event represented in the artifact:</Label>
+                <Button class="helpButton" id="PENhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoEN"/>
+                
+                <Label id="photoOrg">Organizations represented by the artifact:</Label>
+                <Button class="helpButton" id="POhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoO"/>
+                
+                <Label id="photoMake">Make or model of scanner and software used:</Label>
+                <Button class="helpButton" id="PMhelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoM"/>
+                
+                <Label id="photoLocation">Places depicted in scanned artifact: </Label>
+                <Button class="helpButton" id="PLochelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoLocationTA"/>
+                <Label id="placesAsterisk" class="asterisk">*</Label>
+                
+                <Label id="photoMeasurements">Measurements of scanned artifact: </Label>
+                <Button class="helpButton" id="PMehelpButton" onClick="helpSubmit">b</Button>
+                <TextField id="photoMeasurementsTA"/>
+
+                
+            </View>
+            
+           <View id="photoView3">
+            	
+            	<Label id="photoNotes">Additional notes:</Label>
+                <Label id="notesAsterisk" class="asterisk">*</Label>
+                <Button class="helpButton" id="PNohelpButton" onClick="helpSubmit">b</Button>
+                <TextArea id="photoNo"/>
+            	
+                <Button id="scanSrc" onClick="showOptions">CLICK TO ADD SCANNED ITEM</Button>
+                <Button id="next" onClick="submit">Next</Button>
+            </View>
+            
+        </ScrollView>
+    </Window>
+</Alloy>

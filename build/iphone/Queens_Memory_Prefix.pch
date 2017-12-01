@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'Queens Memory' target in the 'Queens Memory' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+ 
+#import "defines.h"
+#include "ThirdpartyNS.h"
+#import <AvailabilityInternal.h>
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
+#define IS_XCODE_8 true
+#else
+#define IS_XCODE_8 false
+#endif

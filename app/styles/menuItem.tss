@@ -1,0 +1,40 @@
+"#index": {
+	//backgroundColor: "#9c71a7",
+	backgroundColor:'transparent',
+	layout : 'vertical',
+	height : '52dp',
+	width : Ti.UI.FILL
+},
+
+'#itemContainer' : {
+	top : 0,
+	height : '50dp',
+	width : Ti.UI.FILL,
+	bubbleParent : false,
+	//layout : 'horizontal'
+},
+
+'#icon' : {
+	width : Ti.UI.SIZE,
+	height : "60%",
+	left : '14dp',
+},
+
+'#title' : {
+	top : '9dp',
+	left : '66dp',
+	width : Ti.UI.SIZE,
+	height : '32dp',
+	color : 'white',
+	font : {
+		fontSize : '16sp',
+		fontWeight : 'bold' 
+	}
+},
+
+'.separator' : {
+	height : '2dp',
+	width : Ti.UI.FILL,
+	top : 0,
+	backgroundColor : 'white'
+}

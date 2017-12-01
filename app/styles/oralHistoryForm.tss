@@ -1,0 +1,339 @@
+"#oralWin": {backgroundColor: "#000000"},
+
+"#oralWin[platform=android]": {windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN}
+
+
+"Label": {
+	font: {fontSize:'12',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	color: 'black',
+},
+
+"TextField": {
+	backgroundColor:'white',
+	left: '5%',
+	width: '90%',
+	borderColor: 'gray',
+	"borderRadius": "5",
+	font:{fontFamily: "Montserrat-Regular",},
+	color: 'black', 
+	maxLength: '120',
+	// maxLength: '140',
+},
+
+"TextField[platform=ios]": {borderColor: '#919191', borderRadius: '5',},
+
+"TextArea":{
+	color: 'black',
+	borderColor: 'gray',
+	borderRadius: '5',
+	left: '5%',
+	width: '90%',
+	height: '25%',
+	backgroundColor: 'white',
+	font:{fontFamily: "Montserrat-Regular",},
+},
+
+".asterisk": {color: 'red',},
+".asterisk[formFactor=handheld]": {font: {fontSize:'20',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''}},
+
+"#QL[platform=ios formFactor=tablet]": {top: '25%',left: '40%'},
+
+"Button[platform=ios]":{font:{fontFamily: "Montserrat-Regular",},},
+
+".helpButton": {
+	zIndex: 1,
+	right: '5%',
+	width: '7%',
+	height:'6%',
+	color: 'black',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "Entypo",fontSize: 30,}
+},
+
+".helpButton[platform=ios]": {
+	right: '5%',
+	color: 'black',
+	zIndex: 1,
+	font:{fontFamily: "Entypo",fontSize: 30,}
+}
+
+"ImageView[platform=android]": {},
+
+////////////NavBar
+// "#QL": {width: '33%',top: '13%',}, 
+
+"#QL[platform=ios]": {width: '34%',top: '26%',	}
+"#QL[platform=android]": {width: '33%',top: '13%',}
+
+"#back":{
+	left: '5%',
+	color: 'white',
+	// top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "queensfoundationfont",fontSize: 35,}
+}
+
+"#back[platform=ios]":{top: '8%', font:{fontSize: 36,}} //top: 5?
+"#back[platform=android]":{top: '0%', font:{fontSize: 35,}}
+
+
+"#TnC": {
+	right: '5%',
+	color: 'white',
+	top: '0%',
+	backgroundColor:'transparent',
+	borderColor: 'transparent',
+	font:{fontFamily: "Entypo",fontSize: 40,}
+}
+
+"#navBar[platform=ios]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	// height: '5%',
+	height: '8%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+
+"#navBar[platform=android]": {
+	backgroundColor:'black',
+	top: '0%',
+	width: '100%',
+	height: '15%',
+	font: {fontSize: 14,},
+	zIndex: 0
+}
+
+
+"#titleBan[platform=ios]": {
+	backgroundColor:'white',
+	// top:'5%',
+	top:'7%',
+	// height: '25%',
+	height: '20%',
+	font: {fontSize: 12,}
+}
+
+"#titleBan[platform=android]": {
+	backgroundColor:'white',
+	top:'7%',
+	// borderColor: 'red',
+	// height: '25%',
+	height: '20%',
+	font: {fontSize: 12,}
+}
+
+"#qp": {top: '8%', width: '30%', left: '7%',}
+
+"#Title": {
+	// textAlign: 'Titanium.UI.TEXT_ALIGNMENT_RIGHT',
+	color: 'black',
+	top: '15%',
+	right: '5%',
+	// text: "Oral History",
+	// borderColor: 'red',
+	font: {fontWeight: 'bold',fontSize: 18}
+}
+
+////////BANNER
+
+"#scrollView[platform=ios]": {	
+	// top: '15%',
+	top: '17%',
+	backgroundColor: "#e6e6e6",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+	disableBounce: 'true', //only IOS devices
+},
+
+"#scrollView[platform=android]": {	
+	top: '18%',
+	backgroundColor: "#e6e6e6",
+	showHorizontalScrollIndicator: "false",
+	showVerticalScrollIndicator: "true",
+	width: Titanium.UI.FILL,
+	bottom: '0%',
+	contentHeight: Titanium.UI.SIZE,
+	contentWidth: Titanium.UI.FILL,
+	layout: 'vertical',
+},
+
+"#pickerView[platform=ios]": {
+	top: '0%',
+	left: '0%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue',
+	// height: '45%',
+	height: '55%',
+	width: '100%',
+}
+
+"#pickerView[platform=android]": {
+	top: '0%',
+	left: '0%',
+	backgroundColor: 'transparent',
+	// backgroundColor: 'blue',
+	// height: '250dp',
+	height: '300dp',
+}
+
+
+"#provideInfo[platform=android]": {
+	top: '13%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize:'12',fontFamily:'',fontStyle:'',fontWeight:''},
+	wordWrap: 'true',
+},
+
+"#provideInfo[platform=ios]": {
+	top: '15%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize:'10',fontFamily:'',fontStyle:'',fontWeight:''},
+	wordWrap: 'true',
+},
+
+"#photoDate":{top: '30%',left: '5%',},
+"#arti":{top: '38%',},
+"#arti[platform=ios]": {height: '11%'},
+"#PDDhelpButton": {top: '40%',},
+"#PDDhelpButton[platform=ios]": {top: '40%',},
+"#timeAsterisk[platform=ios]": {left: '68%', top: '28%',},
+"#timeAsterisk[platform=android]": {left: '70%', top: '28.5%',},
+
+"#photoRecord": {top: '54%',left: '5%',},
+"#photoRecordTA": {top: '60%',left: '5%',},
+"#photoRecordTA[platform=ios]": {height: '11%'},
+"#PRhelpButton": {top: '62%',},
+"#PRhelpButton[platform=android]": {top: '63%',},
+"#dateAsterisk[platform=ios]": {left: '31%', top: '51%',},
+"#dateAsterisk[platform=android]": {left: '32%', top: '52%',},
+
+"#soundInterviewLocation": {top: '79%',left: '5%',},
+"#soundInterviewLocationTA": {top: '85%',left: '5%',},
+"#soundInterviewLocationTA[platform=ios]": {height: '11%'},
+"#PILhelpButton": {top: '87%',}
+"#PILhelpButton[platform=android]": {top: '88%',}
+"#locAsterisk[platform=ios]": {left: '67%', top: '77%',},
+"#locAsterisk[platform=android]": {left: '69%', top: '77.5%',},
+
+"#soundView[platform=ios]": {
+	left: '0%',
+	width: '100%',
+	height: '95%',
+	backgroundColor: 'transparent'
+},
+
+"#soundView2[platform=ios]": {
+	left: '0%',
+	width: '100%',
+	height: '65%',
+	backgroundColor: 'transparent'
+},
+"#soundView[platform=android]": {left: '0%',height: '550dp',},
+"#soundView2[platform=android]": {left: '0%',height: '430dp',},
+
+
+"#TitleLabel": {top: '2%',left: '5%',},
+"#TitleLabelTA": {top: '5%',left: '5%',},
+"#TitleLabelTA[platform=ios]": {height: '6%'},
+"#PThelpButton": {top: '5%',},
+"#PTasterisk[platform=ios]":{top:'1%', left:'28%'},
+"#PTasterisk[platform=android]":{top:'1%', left:'28.5%'},
+
+"#soundName": {top: '13%',left: '5%',},
+"#soundNameTA": {top: '16%',left: '5%',},
+"#soundNameTA[platform=ios]": {height: '6%'},
+"#PNhelpButton": {top: '16%',},
+
+"#soundPeopleName": {top: '25%',left: '5%',},
+"#soundPeopleNameTA": {top: '28%',left: '5%',},
+"#soundPeopleNameTA[platform=ios]": {height: '6%'},
+"#PPNhelpButton": {top: '28%',},
+"#NameAsterisk[platform=ios]": {left: '52%', top: '23%',},
+"#NameAsterisk[platform=android]": {left: '53.5%', top: '24%',},
+
+"#soundPeopleNameL": {top: '37%',left: '5%',},
+"#soundPeopleNameLTA": {top: '40%',left: '5%',},
+"#soundPeopleNameLTA[platform=ios]": {height: '6%'},
+"#PPNLasthelpButton": {top: '40%',},
+"#NameLAsterisk[platform=ios]": {left: '52%', top: '35%',},
+"#NameLAsterisk[platform=android]": {left: '53.5%', top: '36%',},
+
+"#soundLang": {top: '49%',left: '5%',},
+"#soundLangTA": {top: '52%',left: '5%',},
+"#soundLangTA[platform=ios]": {height: '6%'},
+"#PLNhelpButton": {top: '52%',},
+
+"#soundPlace": {top: '61%',left: '5%',},
+"#soundPlaceTA": {top: '64%',left: '5%',},
+"#soundPlaceTA[platform=ios]": {height: '6%'},
+"#PPLhelpButton": {top: '64%',},
+"#placesAsterisk[platform=ios]": {left: '62%', top: '59.5%',},
+"#placesAsterisk[platform=android]": {left: '63%', top: '60%',},
+
+
+"#soundEvent": {top: '73%',left: '5%',},
+"#soundEventTA": {top: '76%',left: '5%',},
+"#soundEventTA[platform=ios]": {height: '6%'},
+"#PESNhelpButton": {top: '76%',},
+
+"#soundPeople": {top: '85%',left: '5%',},
+"#soundPeopleTA": {top: '88%',left: '5%',},
+"#soundPeopleTA[platform=ios]": {height: '6%'},
+"#PPehelpButton": {top: '88%',},
+
+
+//////////////////////////
+
+"#soundOrg": {top: '0%',left: '5%',},
+"#soundOrgTA": {top: '5%',left: '5%',},
+"#soundOrgTA[platform=ios]": {height: '9%'},
+"#POhelpButton": {top: '6%',},
+
+"#soundMake": {top: '18%',left: '5%',},
+"#soundMakeTA": {top: '23%',left: '5%',},
+"#soundMakeTA[platform=ios]": {height: '9%'},
+"#PMhelpButton": {top: '24%',},
+
+"#soundNotes": {top: '35%',left: '5%',},
+"#soundNoTA": {top: '40%',left: '5%',},
+"#soundNoTA[platform=ios]": {height: '25%'},
+"#PNohelpButton": {top: '41%',},
+"#notesAsterisk[platform=ios]": {left: '35%', top: '33%',},
+"#notesAsterisk[platform=android]": {left: '35%', top: '34%',},
+
+"#audioSelectBtn": {
+	title: 'CLICK TO ADD SOUND',
+	top: '77%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '70%',
+},
+
+"#audioSelectBtn[platform=android]": {top: '72%'},
+"#nextBtn[platform=android]": {top: '84%'},
+
+"#nextBtn": {
+	title: 'Next',
+	top: '87%',
+	backgroundColor: '#f2f2f2',
+	borderColor: 'gray',
+	borderRadius: 5,
+	color: 'black',
+	font: {fontSize:'',fontFamily:'Montserrat-Regular',fontStyle:'',fontWeight:''},
+	width: '40%',
+},
+
+
